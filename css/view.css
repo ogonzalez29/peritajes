@@ -1,0 +1,12 @@
+ .mockup-overlay {
+ 	top: 0;
+	position: absolute;
+ 	z-index: -1;
+	opacity: 0.4;
+}
+
+html, body {
+	height: 297mm;
+	width: 210mm;
+	margin: 0 auto;
+}
