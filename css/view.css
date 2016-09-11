@@ -1,12 +1,105 @@
- .mockup-overlay {
+html, body {
+	height: 297mm;
+	width: 210mm;
+	margin: 0 auto;
+}
+
+*{
+	border: 1px solid red !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*{
+	font-family: 'Lato', sans-serif;
+}
+
+.mockup-overlay {
  	top: 0;
 	position: absolute;
  	z-index: -1;
 	opacity: 0.4;
 }
 
-html, body {
-	height: 297mm;
-	width: 210mm;
+.grid{
 	margin: 0 auto;
+	/*max-width: 1280px;*/
+	width: 100%;
+	/*box-shadow: 0 0 8px rgba(0,0,0,0.2);*/
+}
+
+.row,
+.footer{
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.row{
+	padding-top: 5px;
+}
+
+
+.col-1{
+	width: 8.3333333%;
+	display: inline-block;
+	float: right;
+	color: red;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-12 {
+    width: 100%;
+    color: #1A1A1A;
+}
+
+.col-12 h1{
+	margin-top: 5px;
+	margin-bottom: 0px;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+.col-12 h2,
+.col-6 h2{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 1em;
+	text-align: center;
+	width: 100%;
+}
+
+.header h3{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 0.7em;
+	font-weight: 100;
+	width: 100%;
+	text-align: center;
+}
+
+#hleft, 
+#hcenter, 
+#hright,
+#cleft,
+#ccenter,
+#cright {
+	display: inline-block;
+	float: left;
 }
