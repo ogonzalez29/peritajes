@@ -4,9 +4,9 @@ html, body {
 	margin: 0 auto;
 }
 
-*{
+/**{
 	border: 1px solid red !important;
-}
+}*/
 
 * {
     -webkit-box-sizing: border-box;
@@ -102,4 +102,32 @@ html, body {
 #cright {
 	display: inline-block;
 	float: left;
+}
+
+caption{
+	border: 1px solid black;
+	font-weight: bold;
+}
+
+table, th, td {
+   border: 1px solid black;
+   font-size: 0.8em;
+   /*font-weight:100;*/
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.col-4 td{
+	text-align: center;
+}
+
+.col-4 td.first_col{
+	text-align: center;
+}
+
+.col-4 td.second_col{
+	text-align: left;
 }
