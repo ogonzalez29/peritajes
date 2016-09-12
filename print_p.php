@@ -124,13 +124,10 @@
 				<div class="row">
 					<div class="col-4" id="cleft">
 						<table>
-							<caption>
-								A - EXTERIOR:
-							</caption>
 							<thead>
 								<tr style="height: 19px">
 									<th style="width: 6%" scope="col"><span style="display: none">1</span></th>
-									<th style="width: 55%" scope="col"><span style="display: none">Exterior:</span></th>
+									<th style="width: 55%" scope="col"><span>A - EXTERIOR:</span></th>
 						            <th  style="width: 10%" scope="col">B</th>
 									<th  style="width: 10%" scope="col">R</th>
 									<th  style="width: 10%" scope="col">M</th>
@@ -357,13 +354,10 @@
 							</tbody>
 						</table>
 						<table>
-							<caption>
-								B - INTERIOR:
-							</caption>
 							<thead>
 								<tr style="height: 19px">
 									<th style="width: 6%" scope="col"><span style="display: none">1</span></th>
-									<th style="width: 55%" scope="col"><span style="display: none">Interior:</span></th>
+									<th style="width: 55%" scope="col"><span>B - INTERIOR:</span></th>
 						            <th  style="width: 10%" scope="col">B</th>
 									<th  style="width: 10%" scope="col">R</th>
 									<th  style="width: 10%" scope="col">M</th>
@@ -499,29 +493,11 @@
 									<td><label style="display: none" >M</label><input name="matrix_2[16]" type="radio" value="3"></td>
 									<td><label style="display: none" >N/A</label><input name="matrix_2[16]" type="radio" value="4"></td>
 								</tr>
-								<tr>
-									<td class="first_col">17</td>
-									<td class="second_col">Tapa guantera</td>
-						            <td><label style="display: none" >B</label><input name="matrix_2[17]" type="radio" value="1"></td>
-									<td><label style="display: none" >R</label><input name="matrix_2[17]" type="radio" value="2"></td>
-									<td><label style="display: none" >M</label><input name="matrix_2[17]" type="radio" value="3"></td>
-									<td><label style="display: none" >N/A</label><input name="matrix_2[17]" type="radio" value="4"></td>
-								</tr>
-								<tr>
-									<td class="first_col">18</td>
-									<td class="second_col">Tapa caja fusibles</td>
-						            <td><label style="display: none" >B</label><input name="matrix_2[18]" type="radio" value="1"></td>
-									<td><label style="display: none" >R</label><input name="matrix_2[18]" type="radio" value="2"></td>
-									<td><label style="display: none" >M</label><input name="matrix_2[18]" type="radio" value="3"></td>
-									<td><label style="display: none" >N/A</label><input name="matrix_2[18]" type="radio" value="4"></td>
-								</tr>
 							</tbody>
 						</table>
 					</div>
 					<div class="col-4" id="ccenter">
 						<table>
-							<caption style="height: 18px">
-							</caption>
 							<thead>
 								<tr style="height: 19px">
 									<th style="width: 6%" scope="col"><span style="display: none">1</span></th>
@@ -534,8 +510,24 @@
 							</thead>
 							<tbody>
 								<tr>
+									<td class="first_col">17</td>
+									<td class="second_col">Tapa guatera</td>
+						            <td><label style="display: none" >B</label><input name="matrix_2[17]" type="radio" value="1"></td>
+									<td><label style="display: none" >R</label><input name="matrix_2[17]" type="radio" value="2"></td>
+									<td><label style="display: none" >M</label><input name="matrix_2[17]" type="radio" value="3"></td>
+									<td><label style="display: none" >N/A</label><input name="matrix_2[17]" type="radio" value="4"></td>
+								</tr>
+								<tr>
+									<td class="first_col">18</td>
+									<td class="second_col">Desempañador trasero</td>
+						            <td><label style="display: none" >B</label><input name="matrix_2[18]" type="radio" value="1"></td>
+									<td><label style="display: none" >R</label><input name="matrix_2[18]" type="radio" value="2"></td>
+									<td><label style="display: none" >M</label><input name="matrix_2[18]" type="radio" value="3"></td>
+									<td><label style="display: none" >N/A</label><input name="matrix_2[18]" type="radio" value="4"></td>
+								</tr>
+								<tr>
 									<td class="first_col">19</td>
-									<td class="second_col">Tapa pito</td>
+									<td class="second_col">Luz tablero</td>
 						            <td><label style="display: none" >B</label><input name="matrix_2[19]" type="radio" value="1"></td>
 									<td><label style="display: none" >R</label><input name="matrix_2[19]" type="radio" value="2"></td>
 									<td><label style="display: none" >M</label><input name="matrix_2[19]" type="radio" value="3"></td>
@@ -543,7 +535,7 @@
 								</tr>
 								<tr>
 									<td class="first_col">20</td>
-									<td class="second_col">Desempañador trasero</td>
+									<td class="second_col">Indicador de gasolina</td>
 						            <td><label style="display: none" >B</label><input name="matrix_2[20]" type="radio" value="1"></td>
 									<td><label style="display: none" >R</label><input name="matrix_2[20]" type="radio" value="2"></td>
 									<td><label style="display: none" >M</label><input name="matrix_2[20]" type="radio" value="3"></td>
@@ -551,7 +543,7 @@
 								</tr>
 								<tr>
 									<td class="first_col">21</td>
-									<td class="second_col">Luz tablero</td>
+									<td class="second_col">Indicador de temperatura</td>
 						            <td><label style="display: none" >B</label><input name="matrix_2[21]" type="radio" value="1"></td>
 									<td><label style="display: none" >R</label><input name="matrix_2[21]" type="radio" value="2"></td>
 									<td><label style="display: none" >M</label><input name="matrix_2[21]" type="radio" value="3"></td>
@@ -559,38 +551,19 @@
 								</tr>
 								<tr>
 									<td class="first_col">22</td>
-									<td class="second_col">Indicador de gasolina</td>
+									<td class="second_col">Indicador presión de aceite</td>
 						            <td><label style="display: none" >B</label><input name="matrix_2[22]" type="radio" value="1"></td>
 									<td><label style="display: none" >R</label><input name="matrix_2[22]" type="radio" value="2"></td>
 									<td><label style="display: none" >M</label><input name="matrix_2[22]" type="radio" value="3"></td>
 									<td><label style="display: none" >N/A</label><input name="matrix_2[22]" type="radio" value="4"></td>
 								</tr>
-								<tr>
-									<td class="first_col">23</td>
-									<td class="second_col">Indicador de temperatura</td>
-						            <td><label style="display: none" >B</label><input name="matrix_2[23]" type="radio" value="1"></td>
-									<td><label style="display: none" >R</label><input name="matrix_2[23]" type="radio" value="2"></td>
-									<td><label style="display: none" >M</label><input name="matrix_2[23]" type="radio" value="3"></td>
-									<td><label style="display: none" >N/A</label><input name="matrix_2[23]" type="radio" value="4"></td>
-								</tr>
-								<tr>
-									<td class="first_col">24</td>
-									<td class="second_col">Indicador presión de aceite</td>
-						            <td><label style="display: none" >B</label><input name="matrix_2[24]" type="radio" value="1"></td>
-									<td><label style="display: none" >R</label><input name="matrix_2[24]" type="radio" value="2"></td>
-									<td><label style="display: none" >M</label><input name="matrix_2[24]" type="radio" value="3"></td>
-									<td><label style="display: none" >N/A</label><input name="matrix_2[24]" type="radio" value="4"></td>
-								</tr>
 							</tbody>
 						</table>
 						<table>
-							<caption>
-								C - INTERIOR:
-							</caption>
 							<thead>
 								<tr style="height: 19px">
 									<th style="width: 6%" scope="col"><span style="display: none">1</span></th>
-									<th style="width: 55%" scope="col"><span style="display: none">Interior:</span></th>
+									<th style="width: 55%" scope="col"><span>C - INTERIOR:</span></th>
 						            <th  style="width: 10%" scope="col">B</th>
 									<th  style="width: 10%" scope="col">R</th>
 									<th  style="width: 10%" scope="col">M</th>
@@ -705,13 +678,10 @@
 							</tbody>
 						</table>
 						<table>
-							<caption>
-								D - MOTOR:
-							</caption>
 							<thead>
-								<tr style="height: 19px">
+								<tr style="height: 18px">
 									<th style="width: 6%" scope="col"><span style="display: none">1</span></th>
-									<th style="width: 55%" scope="col"><span style="display: none">Motor:</span></th>
+									<th style="width: 55%" scope="col"><span>D - MOTOR:</span></th>
 						            <th  style="width: 10%" scope="col">B</th>
 									<th  style="width: 10%" scope="col">R</th>
 									<th  style="width: 10%" scope="col">M</th>
@@ -842,13 +812,10 @@
 							</tbody>
 						</table>
 						<table>
-							<caption>
-								E - ELECTRICIDAD:
-							</caption>
 							<thead>
-								<tr style="height: 19px">
+								<tr style="height: 18px">
 									<th style="width: 6%" scope="col"><span style="display: none">1</span></th>
-									<th style="width: 55%" scope="col"><span style="display: none">Electricidad:</span></th>
+									<th style="width: 55%" scope="col"><span>E - ELECTRICIDAD:</span></th>
 						            <th  style="width: 10%" scope="col">B</th>
 									<th  style="width: 10%" scope="col">R</th>
 									<th  style="width: 10%" scope="col">M</th>
@@ -917,10 +884,8 @@
 					</div>
 					<div class="col-4" id="cright">
 						<table>
-							<caption style="height: 18px">
-							</caption>
 							<thead>
-								<tr style="height: 19px">
+								<tr style="height: 18px">
 									<th style="width: 6%" scope="col"><span style="display: none">1</span></th>
 									<th style="width: 55%" scope="col"><span style="display: none">Electricidad:</span></th>
 						            <th  style="width: 10%" scope="col">B</th>
@@ -949,13 +914,10 @@
 							</tbody>
 						</table>
 						<table>
-							<caption>
-								F - SUSPENSION Y DIRECCION:
-							</caption>
 							<thead>
 								<tr style="height: 19px">
 									<th style="width: 6%" scope="col"><span style="display: none">1</span></th>
-									<th style="width: 55%" scope="col"><span style="display: none">Suspensión y dirección:</span></th>
+									<th style="width: 55%" scope="col"><span> F -SUSPENSION/DIRECCION:</span></th>
 						            <th  style="width: 10%" scope="col">B</th>
 									<th  style="width: 10%" scope="col">R</th>
 									<th  style="width: 10%" scope="col">M</th>
@@ -1158,13 +1120,10 @@
 							</tbody>
 						</table>
 						<table>
-							<caption>
-								G - CAJA Y TRANSMISION:
-							</caption>
 							<thead>
 								<tr style="height: 19px">
 									<th style="width: 6%" scope="col"><span style="display: none">1</span></th>
-									<th style="width: 55%" scope="col"><span style="display: none">Caja y transmisión:</span></th>
+									<th style="width: 55%" scope="col"><span>G - CAJA Y TRANSMISION:</span></th>
 						            <th  style="width: 10%" scope="col">B</th>
 									<th  style="width: 10%" scope="col">R</th>
 									<th  style="width: 10%" scope="col">M</th>
@@ -1255,13 +1214,10 @@
 							</tbody>
 						</table>
 						<table>
-							<caption>
-								H - OTROS:
-							</caption>
 							<thead>
-								<tr style="height: 19px">
+								<tr style="height: 18px">
 									<th style="width: 6%" scope="col"><span style="display: none">1</span></th>
-									<th style="width: 55%" scope="col"><span style="display: none">Otros:</span></th>
+									<th style="width: 55%" scope="col"><span>H - OTROS:</span></th>
 						            <th  style="width: 10%" scope="col">B</th>
 									<th  style="width: 10%" scope="col">R</th>
 									<th  style="width: 10%" scope="col">M</th>
@@ -1313,6 +1269,144 @@
 						</table>
 					</div>
 				</div>
+				<div class="row-1">
+					<h3>OBSERVACIONES:<br>Anote el número correspondiente</h3>
+				</div>
+				<div class="row-2">
+					<div class="col-6" style="float:left; padding-right:5px">
+						<div class="col-12">
+							<div class="col-2">
+								<h3>A-EXTERIOR:</h3>
+							</div>
+							<div class="col-10">
+								<h3 style="Height:15px"></h3>
+							</div>
+							<div class="col-12">
+								<h3 style="Height:15px"></h3>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="col-2">
+								<h3>B-INTERIOR:</h3>
+							</div>
+							<div class="col-10">
+								<h3 style="Height:15px"></h3>
+							</div>
+							<div class="col-12">
+								<h3 style="Height:15px"></h3>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="col-2">
+								<h3>C-INTERIOR:</h3>
+							</div>
+							<div class="col-10">
+								<h3 style="Height:15px"></h3>
+							</div>
+							<div class="col-12">
+								<h3 style="Height:15px"></h3>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="col-1_1">
+								<h3>D-MOTOR:</h3>
+							</div>
+							<div class="col-11">
+								<h3 style="Height:15px"></h3>
+							</div>
+							<div class="col-12">
+								<h3 style="Height:15px"></h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-6" style="padding-left:5px">
+						<div class="col-12">
+							<div class="col-3">
+								<h3>E-ELECTRICIDAD:</h3>
+							</div>
+							<div class="col-9">
+								<h3 style="Height:15px"></h3>
+							</div>
+							<div class="col-12">
+								<h3 style="Height:15px"></h3>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="col-6_1">
+								<h3>F-SUSPENSION Y DIRECCION:</h3>
+							</div>
+							<div class="col-5_1">
+								<h3 style="Height:15px"></h3>
+							</div>
+							<div class="col-12">
+								<h3 style="Height:15px"></h3>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="col-4_1">
+								<h3>G-CAJA Y TRANSMISION:</h3>
+							</div>
+							<div class="col-7_1">
+								<h3 style="Height:15px"></h3>
+							</div>
+							<div class="col-12">
+								<h3 style="Height:15px"></h3>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="col-1_1">
+								<h3>H-OTROS:</h3>
+							</div>
+							<div class="col-11">
+								<h3 style="Height:15px"></h3>
+							</div>
+							<div class="col-12">
+								<h3 style="Height:15px"></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row-3">
+					<div id="mf_sigpad_7">
+						<div class="mf_sig_wrapper medium">
+					         <canvas class="mf_canvas_pad" width="309" height="129"></canvas>
+					         <input type="hidden" name="output" id="output" class="output"/>
+				        </div>
+				        <script type="text/javascript">
+							$(function(){
+								var sigpad_options_7 = {
+					               drawOnly : false,
+					               displayOnly: true,
+					               clear: '.element_7_clear',
+					               bgColour: '#fff',
+					               penColour: '#000',
+					               output: '#output',
+					               lineTop: 95,
+					               lineMargin: 10,
+					               validateFields: false
+					        	};
+					        	var sigpad_data_7 = <?php echo $row['signature']?>;
+					      		$('#mf_sigpad_7').signaturePad(sigpad_options_7).regenerate(sigpad_data_7);
+							});
+						</script>
+					</div>
+					<div class="col-12">
+						<h3 style="text-align:center">Firma y sello del taller</h3>
+					</div>
+				</div>
+				<div class="footer">
+					<div class="row-4">
+						<div class="col-12">
+							<h3>NOTA: El peritaje constituye una revisión exclusiva de los ítems relacionados. Cualquier daño no aparente detectado posterior a dicha revisión, no es responsabilidad del taller</h3>
+						</div>
+					</div>
+					<div class="row-5">
+						<div class="col-12">
+							<h3>Carrera 22 N. 76-57 | Bogotá - Colombia | 2117943 - 2119290<br>www.servitalleres.com | contacto@servitalleres.com</h3>
+						</div>
+					</div>	
+				</div>
+					
 			</div>
 		</div>
 <!-- 		<div class="mockup-overlay">

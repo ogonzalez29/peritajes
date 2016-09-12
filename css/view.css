@@ -33,17 +33,11 @@ html, body {
 	/*box-shadow: 0 0 8px rgba(0,0,0,0.2);*/
 }
 
-.row,
-.footer{
+.row {
     width: 100%;
     margin-bottom: 5px;
-    display: flex;
+    /*display: flex;*/
 }
-
-.row{
-	padding-top: 5px;
-}
-
 
 .col-1{
 	width: 8.3333333%;
@@ -52,16 +46,95 @@ html, body {
 	color: red;
 }
 
+.col-1_1 {
+	width: 18%;
+	display: inline-block;
+	float: left;
+}
+
+.col-2{
+	width: 23%;
+	display: inline-block;
+	float: left;
+}
+
+.col-3{
+	width: 31%;
+	display: inline-block;
+	float: left;
+}
+
 .col-4 {
     width: 33.33%;
 }
 
+.col-4_1 {
+	width: 43%;
+	display: inline-block;
+	float: left;
+}
+
+.col-5 {
+	width: 44%;
+	display: inline-block;
+	float: right;
+	border-bottom: 1px solid black;
+}
+
+.col-5_1 {
+	width: 49%;
+	display: inline-block;
+	float: right;
+	border-bottom: 1px solid black;
+}
+
 .col-6 {
     width: 50%;
+    display: inline-block;
+}
+
+.col-6_1 {
+	width: 51%;
+	display: inline-block;
+	float: left;
+}
+
+.col-7 {
+	width: 56%;
+	display: inline-block;
+	float: left;
+}
+
+.col-7_1 {
+	width: 57%;
+	display: inline-block;
+	float: right;
+	border-bottom: 1px solid black;
 }
 
 .col-8 {
     width: 66.66%;
+}
+
+.col-9{
+	width: 69%;
+	display: inline-block;
+	float: right;
+	border-bottom: 1px solid black;
+}
+
+.col-10{
+	width: 77%;
+	display: inline-block;
+	float: right;
+	border-bottom: 1px solid black;
+}
+
+.col-11 {
+	width: 82%;
+	display: inline-block;
+	float: right;
+	border-bottom: 1px solid black;
 }
 
 .col-12 {
@@ -104,9 +177,11 @@ html, body {
 	float: left;
 }
 
-caption{
-	border: 1px solid black;
+table span, 
+table thead tr {
 	font-weight: bold;
+	font-size: 1em;
+	text-align: center;
 }
 
 table, th, td {
@@ -130,4 +205,72 @@ table {
 
 .col-4 td.second_col{
 	text-align: left;
+}
+
+.row-1{
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.row-1 h3, 
+.row-2 h3,
+.row-3 h3,
+.footer h3{
+	font-size: 0.8em;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.row-2 .col-6{
+	display: inline-block;
+}
+
+.row-2,
+.row-3{
+	padding-bottom: 15px;
+	border-bottom: 2px solid black;
+}
+
+.row-2 .col-12{
+	display: inline-block;
+}
+
+.row-2 .col-12 .col-12 {
+	border-bottom: 1px solid black;
+}
+
+#mf_sigpad_7 {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.mf_canvas_pad{
+	border-radius: 10px;
+	width: 100%;
+	cursor: url("../js/signaturepad/pen.cur"), crosshair;
+  	cursor: url("../js/signaturepad/pen.cur") 16 16, crosshair;
+}
+
+.mf_sig_wrapper{
+	margin: 0 auto;
+	width: 309px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	padding-bottom: 0px !important;
+	padding: 3px !important;
+}
+
+.footer .row-4 .col-12{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	border-bottom: 2px solid black;
+}
+
+.footer .row-5 .col-12 h3{
+	font-weight: 100;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
 }
