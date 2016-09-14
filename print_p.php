@@ -14,7 +14,7 @@
 			<div class="header">
 				<div class="row">
 					<div class="col-12">
-						<img src="http://placehold.it/255x40" alt="" />
+						<img src="img/logo.png" alt="logo servitalleres" />
 						<div class="col-1">
 							<h2>N. 2000</h2>
 						</div>
@@ -32,7 +32,7 @@
 								<h3 style="font-weight:bold">Fecha:</h3>
 							</div>
 							<div class="col-6" style="float:right">
-								<h3>10/09/2016</h3>
+								<h3 style="border-bottom:1px solid black">10/09/2016</h3>
 							</div>
 						</div>
 						<div class="col-12">
@@ -40,7 +40,7 @@
 								<h3 style="font-weight:bold">Asesor de servicio:</h3>
 							</div>
 							<div class="col-6" style="float:right">
-								<h3>Daniel Gonzalez</h3>
+								<h3 style="border-bottom:1px solid black">Daniel Gonzalez</h3>
 							</div>
 						</div>
 					</div>
@@ -53,7 +53,7 @@
 								<h3 style="font-weight:bold">Nombre:</h3>
 							</div>
 							<div class="col-8" style="float:right">
-								<h3>Oscar Daniel Gonzalez</h3>
+								<h3 style="border-bottom:1px solid black">Oscar Daniel Gonzalez</h3>
 							</div>
 						</div>
 						<div class="col-12">
@@ -61,7 +61,7 @@
 								<h3 style="font-weight:bold">Cédula:</h3>
 							</div>
 							<div class="col-8" style="float:right">
-								<h3>80.136.753</h3>
+								<h3 style="border-bottom:1px solid black">80.136.753</h3>
 							</div>
 						</div>
 						<div class="col-12">
@@ -69,7 +69,7 @@
 								<h3 style="font-weight:bold">Teléfono:</h3>
 							</div>
 							<div class="col-8" style="float:right">
-								<h3>3186515096</h3>
+								<h3 style="border-bottom:1px solid black">3186515096</h3>
 							</div>
 						</div>
 						<div class="col-12">
@@ -77,7 +77,7 @@
 								<h3 style="font-weight:bold">Email:</h3>
 							</div>
 							<div class="col-8" style="float:right">
-								<h3>oscar.d.gonzalez@hotmail.com</h3>
+								<h3 style="border-bottom:1px solid black">oscar.d.gonzalez@hotmail.com</h3>
 							</div>
 						</div>
 					</div>
@@ -90,7 +90,7 @@
 								<h3 style="font-weight:bold">Marca y línea:</h3>
 							</div>
 							<div class="col-6" style="float:right">
-								<h3>Renault Clio</h3>
+								<h3 style="border-bottom:1px solid black">Renault Clio</h3>
 							</div>
 						</div>
 						<div class="col-12">
@@ -98,7 +98,7 @@
 								<h3 style="font-weight:bold">Modelo:</h3>
 							</div>
 							<div class="col-6" style="float:right">
-								<h3>2008</h3>
+								<h3 style="border-bottom:1px solid black">2008</h3>
 							</div>
 						</div>
 						<div class="col-12">
@@ -106,7 +106,7 @@
 								<h3 style="font-weight:bold">Placa:</h3>
 							</div>
 							<div class="col-6" style="float:right">
-								<h3>CVL685</h3>
+								<h3 style="border-bottom:1px solid black">CVL685</h3>
 							</div>
 						</div>
 						<div class="col-12">
@@ -114,7 +114,7 @@
 								<h3 style="font-weight:bold">Kilometraje:</h3>
 							</div>
 							<div class="col-6" style="float:right">
-								<h3>77.000</h3>
+								<h3 style="border-bottom:1px solid black">77.000</h3>
 							</div>
 						</div>
 					</div>
@@ -355,7 +355,7 @@
 						</table>
 						<table>
 							<thead>
-								<tr style="height: 19px">
+								<tr style="height: 21px">
 									<th style="width: 6%" scope="col"><span style="display: none">1</span></th>
 									<th style="width: 55%" scope="col"><span>B - INTERIOR:</span></th>
 						            <th  style="width: 10%" scope="col">B</th>
@@ -561,7 +561,7 @@
 						</table>
 						<table>
 							<thead>
-								<tr style="height: 19px">
+								<tr style="height: 21px">
 									<th style="width: 6%" scope="col"><span style="display: none">1</span></th>
 									<th style="width: 55%" scope="col"><span>C - INTERIOR:</span></th>
 						            <th  style="width: 10%" scope="col">B</th>
@@ -679,7 +679,7 @@
 						</table>
 						<table>
 							<thead>
-								<tr style="height: 18px">
+								<tr style="height: 21px">
 									<th style="width: 6%" scope="col"><span style="display: none">1</span></th>
 									<th style="width: 55%" scope="col"><span>D - MOTOR:</span></th>
 						            <th  style="width: 10%" scope="col">B</th>
@@ -813,7 +813,7 @@
 						</table>
 						<table>
 							<thead>
-								<tr style="height: 18px">
+								<tr style="height: 21px">
 									<th style="width: 6%" scope="col"><span style="display: none">1</span></th>
 									<th style="width: 55%" scope="col"><span>E - ELECTRICIDAD:</span></th>
 						            <th  style="width: 10%" scope="col">B</th>
@@ -885,7 +885,7 @@
 					<div class="col-4" id="cright">
 						<table>
 							<thead>
-								<tr style="height: 18px">
+								<tr style="height: 19px">
 									<th style="width: 6%" scope="col"><span style="display: none">1</span></th>
 									<th style="width: 55%" scope="col"><span style="display: none">Electricidad:</span></th>
 						            <th  style="width: 10%" scope="col">B</th>
@@ -915,7 +915,7 @@
 						</table>
 						<table>
 							<thead>
-								<tr style="height: 19px">
+								<tr style="height: 21px">
 									<th style="width: 6%" scope="col"><span style="display: none">1</span></th>
 									<th style="width: 55%" scope="col"><span> F -SUSPENSION/DIRECCION:</span></th>
 						            <th  style="width: 10%" scope="col">B</th>
@@ -1121,7 +1121,7 @@
 						</table>
 						<table>
 							<thead>
-								<tr style="height: 19px">
+								<tr style="height: 21px">
 									<th style="width: 6%" scope="col"><span style="display: none">1</span></th>
 									<th style="width: 55%" scope="col"><span>G - CAJA Y TRANSMISION:</span></th>
 						            <th  style="width: 10%" scope="col">B</th>
@@ -1215,7 +1215,7 @@
 						</table>
 						<table>
 							<thead>
-								<tr style="height: 18px">
+								<tr style="height: 21px">
 									<th style="width: 6%" scope="col"><span style="display: none">1</span></th>
 									<th style="width: 55%" scope="col"><span>H - OTROS:</span></th>
 						            <th  style="width: 10%" scope="col">B</th>
