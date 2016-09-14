@@ -511,7 +511,7 @@
 							<tbody>
 								<tr>
 									<td class="first_col">17</td>
-									<td class="second_col">Tapa guatera</td>
+									<td class="second_col">Tapa guantera</td>
 						            <td><label style="display: none" >B</label><input name="matrix_2[17]" type="radio" value="1"></td>
 									<td><label style="display: none" >R</label><input name="matrix_2[17]" type="radio" value="2"></td>
 									<td><label style="display: none" >M</label><input name="matrix_2[17]" type="radio" value="3"></td>
