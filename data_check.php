@@ -14,6 +14,13 @@ global $modelErr;
 global $mileageErr;
 global $licenseErr;
 global $matrix1Err;
+global $matrix2Err;
+global $matrix3Err;
+global $matrix4Err;
+global $matrix5Err;
+global $matrix6Err;
+global $matrix7Err;
+global $matrix8Err;
 global $comment1Err;
 global $comment2Err;
 global $priceErr;
@@ -42,7 +49,7 @@ $errors = array('$dateErr' => "",
                 '$validityTimeErr' =>"");
 
 // $orderErr = $nameErr = $last_nameErr = $emailErr = $genderErr = $websiteErr = "";
-$month = $day = $year = $firstname = $lastname = $phone = $email = $make = $model = $license = $mileage =  $firstname1 = $lastname1 =  $comment1 = $comment2 = $price = $time = $validityTime = "";
+$month = $day = $year = $firstname = $lastname = $idnumber = $phone = $email = $make = $model = $license = $mileage =  $firstname1 = $lastname1 =  $comment1 = $comment2 = $price = $time = $validityTime = "";
 
 //search input text field and error in search.php file
 $search ="";
@@ -102,6 +109,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 
   array_push($errors, $last_nameErr);
+
+  if (empty($_POST["idnumber"])) {
+    $idErr = "* Cédula requerida";
+  } else {
+    $idnumber = test_input($_POST["idnumber"]);
+    // check if order only contains numbers and no whitespaces
+    if (!preg_match("/^[0-9]*$/",$idnumber)) {
+      $idErr = "* Solo números permitidos sin espacios, comas ni puntos"; 
+    }
+  }
+
+  array_push($errors, $idErr);
 
   if (empty($_POST["phone"])) {
     $phoneErr = "* Teléfono requerido";

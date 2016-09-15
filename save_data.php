@@ -6,15 +6,17 @@ $errors_array = array_filter($errors);
 
  if (isset($_POST['submit'])) {
 
- 	//Header information of print_cc.php 
+ 	//Header information of print_p.php 
  	$day = $_POST['day'];
  	$month = $_POST['month'];
  	$year = $_POST['year'];
- 	$ordernumber = mysql_real_escape_string(htmlspecialchars($_POST['ordernumber']));
  	$firstname1 = mysql_real_escape_string(htmlspecialchars($_POST['firstname1']));
  	$lastname1 = mysql_real_escape_string(htmlspecialchars($_POST['lastname1']));
  	$firstname = mysql_real_escape_string(htmlspecialchars($_POST['firstname']));
  	$lastname = mysql_real_escape_string(htmlspecialchars($_POST['lastname']));
+ 	$idnumber = mysql_real_escape_string(htmlspecialchars($_POST['idnumber']));
+ 	$phone = mysql_real_escape_string(htmlspecialchars($_POST['phone']));
+ 	$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
  	@$make = $_POST['cat'];
  	@$line = $_POST['subcat'];
  	$model = mysql_real_escape_string(htmlspecialchars($_POST['model']));
@@ -27,7 +29,7 @@ $errors_array = array_filter($errors);
  	$firstname = str_replace('\' ', '\'', ucwords(str_replace('\'', '\' ', strtolower($firstname))));
 	$lastname = str_replace('\' ', '\'', ucwords(str_replace('\'', '\' ', strtolower($lastname))));
 
- 	//Matrix 1 information of print_cc.php (instrumentos y equipamento)
+ 	//Matrix 1 information of print_p.php (instrumentos y equipamento)
  	@$m1_el1 = $_POST['matrix_1'][1];
  	@$m1_el2 = $_POST['matrix_1'][2];
 	@$m1_el3 = $_POST['matrix_1'][3];
@@ -124,14 +126,16 @@ $errors_array = array_filter($errors);
 		echo "<form method=post action='index.php'>";
 	}
 	else{
-		mysql_query("INSERT document SET day='$day', 
+		mysql_query("INSERT document2 SET day='$day', 
 										 month='$month', 
 										 year='$year',
-										 ordernumber='$ordernumber',
 										 firstname1='$firstname1', 
 										 lastname1='$lastname1',
 										 firstname='$firstname', 
-										 lastname='$lastname',  
+										 lastname='$lastname', 
+										 idnumber='idnumber',
+										 phone='$phone',
+										 email='$email', 
 										 make='$make',
 										 type='$line',
 										 model='$model', 
@@ -199,7 +203,7 @@ $errors_array = array_filter($errors);
 										 ")
  		or die(mysql_error());
 		
-		header("location: print_cc.php");
+		header("location: print_p.php");
 	}
 }
 // var_dump($errors_array);

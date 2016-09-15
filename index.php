@@ -209,14 +209,14 @@ require_once 'save_data.php'; //Save input to database
 		<li id="li_8" >
 			<label class="description" for="element_4">Cédula </label>
 			<div>
-				<input id="element_8" name="phone" class="element text medium" type="text" maxlength="255" value="<?php echo $phone;?>"/> 
+				<input id="element_8" name="idnumber" class="element text medium" type="text" maxlength="255" value="<?php echo $idnumber;?>"/> 
 				<span><?php echo $idErr;?></span>
 			</div> 
 		</li>
 		<li id="li_10" >
 			<label class="description" for="element_4">Teléfono </label>
 			<div>
-				<input id="element_8" name="phone" class="element text medium" type="text" maxlength="255" value="<?php echo $phone;?>"/> 
+				<input id="element_10" name="phone" class="element text medium" type="text" maxlength="255" value="<?php echo $phone;?>"/> 
 				<span><?php echo $phoneErr;?></span>
 			</div> 
 		</li>
@@ -272,69 +272,50 @@ require_once 'save_data.php'; //Save input to database
 		<li class="section_break">
 		<p></p>
 		</li>
-		<li id="li_21" >
-		<label class="description" for="element_21">Piezas a intervenir </label>
-		<div>
-			<textarea onKeyPress=check_length_1(this.form); onKeyDown=check_length_1(this.form); id="element_21" name="comment1" class="element textarea medium"><?php echo $comment1;?></textarea> 
-			<br>
-			<input size=1 value=300 name=text_num_1 style="float:right; text-align:right;">
-			<span><?php echo $comment1Err;?></span>
-		</div> 
-		</li>
-		<li class="section_break">
-		<p></p>
-		</li>		
-		<li id="li_3">
-	    	<label class="description" for="element_3">Repuestos asociados </label>
-	            <input id="element1" name="matrix_1[1]" type="radio" value="1" />Si
-				<input id="element2" name="matrix_1[1]" type="radio" value="2"  />No
+		<?php
+		require('lists.php');
+		foreach ($names as $mat => $name) {
+			echo "<li class=matrix>
+			<table>
+				<caption>
+						$name 
+				</caption>
+			   <thead>
+			    	<tr>
+			        	<th style=width:40% scope=col><span style=display:none>$name</span></th>
+			            <th id=mc_3_1 style=width:15% scope=col>B</th>
+			            <th id=mc_3_2 style=width:15% scope=col>R</th>
+						<th id=mc_3_3 style=width:15% scope=col>M</th>
+						<th id=mc_3_4 style=width:15% scope=col>N/A</th>
+			        </tr>
+			    </thead>
+			    <tbody>";
+			    for ($i=1; $i <= count($list[$mat]) ; $i++) {
+			    	$element = $list[$mat][$i]; 
+			    	echo "<tr class=alt>
+			    		<td class=first_col>$element</td>";
+			    	for ($j=1; $j < 5; $j++) { 
+		            	echo "<td><label style= display:none for=element_3_$j>$loptions[$j]</label><input id=element$j name=$elNames[$mat][$i] type=radio value=$j /></td>";
+			    	}
+			    	echo "</tr>";
+			   	}	
+				?>    
+			    </tbody>
+			</table>
 			<div>
-				<span><?php echo $matrix1Err;?></span>
+				<span><?php echo $errorNames[$mat];?></span>
 			</div>
 		</li>
-		<li class="section_break">
-		<p></p>
-		</li>
-		<li id="li_22" >
-		<label class="description" for="element_22">Repuestos </label>
-		<div>
-			<textarea onKeyPress=check_length_2(this.form); onKeyDown=check_length_2(this.form); id="element_22" name="comment2" class="element textarea medium"><?php echo $comment2;?></textarea> 
-			<br>
-			<input size=1 value=300 name=text_num_2 style="float:right; text-align:right;">
-			<span><?php echo $comment2Err;?></span>
-		</div> 
-		</li>		
-			<li class="section_break">
-		</li>						
-		<li id="li_25" >
-		<label class="description" for="element_25">Costo de la reparación (IVA incluido) </label>
-		<div>
-			<input id="element_25" name="price" class="element text medium" type="text" maxlength="255" value="<?php echo $price;?>"/> 
-			<span><?php echo $priceErr;?></span> 
-		</div>
-		</li>
-		<li id="li_26" >
-		<label class="description" for="element_26">Tiempo de entrega (horas) </label>
-		<div>
-			<input id="element_26" name="time" class="element text medium" type="text" maxlength="255" value="<?php echo $time;?>"/> 
-			<span><?php echo $timeErr;?></span> 
-		</div>
-		</li>
-		<li id="li_27" >
-		<label class="description" for="element_27">Validez de la cotización (días) </label>
-		<div>
-			<input id="element_27" name="validity-time" class="element text medium" type="text" maxlength="255" value="<?php echo $validityTime;?>"/> 
-			<span><?php echo $validityTimeErr;?></span> 
-		</div>
-		</li>	
+	<?php
+		}
+		?>
 		<li class="buttons">
-			    <input type="hidden" name="form_id" value="1134337" />
-			    
-				<input id="saveForm" class="button_text" type="submit" name="submit" value="Enviar" />
+			<input type="hidden" name="form_id" value="1134337" />
+			<input id="saveForm" class="button_text" type="submit" name="submit" value="Enviar" />
 		</li>
-			</ul>
-		<br>	
-		</form>	
+		</ul>
+		<br>
+	</form>	
 		<div id="footer">
 			Copyright &copy; 2016 <a href="http://www.servitalleres.com" target="_blank">Servitalleres</a>
 		</div>
