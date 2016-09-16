@@ -53,6 +53,8 @@ require_once 'save_data.php'; //Save input to database
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.effects.core.js"></script>
 	<!--[if lt IE 9]><script src="js/signaturepad/flashcanvas.js"></script><![endif]-->
+	<script type="text/javascript" src="js/signaturepad/jquery.signaturepad.min.js"></script>
+	<script type="text/javascript" src="js/signaturepad/json2.min.js"></script>
 	<script type="text/javascript" src="js/checklength.js"></script>
 		<script type="text/javascript" src="js/jquery.mockjax.js"></script>
     <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
@@ -176,15 +178,15 @@ require_once 'save_data.php'; //Save input to database
 		<li id="li_2" >
 		<label class="description" for="element_7">Asesor de servicio </label>
 		<span>
-			<input onKeyPress=check_length_5(this.form); onKeyDown=check_length_5(this.form); id="element_7_1" name= "firstname1" class="element text" maxlength="255" size="15" value="<?php echo $firstname1;?>"/>
+			<input onKeyPress=check_length_9(this.form); onKeyDown=check_length_9(this.form); id="element_7_1" name= "firstname1" class="element text" maxlength="255" size="15" value="<?php echo $firstname1;?>"/>
 			<label>Nombre</label>
-			<input size=1 value=9 name=text_num_5 style="display:none; float:right; text-align:right;">
+			<input size=1 value=9 name=text_num_9 style="display:none; float:right; text-align:right;">
 			<span><?php echo $nameErr1;?></span>
 		</span>
 		<span>
-			<input onKeyPress=check_length_6(this.form); onKeyDown=check_length_6(this.form); id="element_7_2" name= "lastname1" class="element text" maxlength="255" size="15" value="<?php echo $lastname1;?>"/>
+			<input onKeyPress=check_length_10(this.form); onKeyDown=check_length_10(this.form); id="element_7_2" name= "lastname1" class="element text" maxlength="255" size="15" value="<?php echo $lastname1;?>"/>
 			<label>Apellido</label>
-			<input size=1 value=11 name=text_num_6 style="display:none; float:right; text-align:right;">
+			<input size=1 value=11 name=text_num_10 style="display:none; float:right; text-align:right;">
 			<span><?php echo $last_nameErr1;?></span>
 		</span> 
 		</li>
@@ -194,15 +196,15 @@ require_once 'save_data.php'; //Save input to database
 		<li id="li_2" >
 		<label class="description" for="element_2">Cliente </label>
 		<span>
-			<input onKeyPress=check_length_7(this.form); onKeyDown=check_length_7(this.form); id="element_2_1" name= "firstname" class="element text" maxlength="255" size="15" value="<?php echo $firstname;?>"/>
+			<input onKeyPress=check_length_11(this.form); onKeyDown=check_length_11(this.form); id="element_2_1" name= "firstname" class="element text" maxlength="255" size="15" value="<?php echo $firstname;?>"/>
 			<label>Nombre(s)</label>
-			<input size=1 value=15 name=text_num_7 style="display:none; float:right; text-align:right;">
+			<input size=1 value=15 name=text_num_11 style="display:none; float:right; text-align:right;">
 			<span><?php echo $nameErr;?></span>
 		</span>
 		<span>
-			<input onKeyPress=check_length_8(this.form); onKeyDown=check_length_8(this.form); id="element_2_2" name= "lastname" class="element text" maxlength="255" size="15" value="<?php echo $lastname;?>"/>
+			<input onKeyPress=check_length_12(this.form); onKeyDown=check_length_12(this.form); id="element_2_2" name= "lastname" class="element text" maxlength="255" size="15" value="<?php echo $lastname;?>"/>
 			<label>Apellido</label>
-			<input size=1 value=11 name=text_num_8 style="display:none; float:right; text-align:right;">
+			<input size=1 value=11 name=text_num_12 style="display:none; float:right; text-align:right;">
 			<span><?php echo $last_nameErr;?></span>
 		</span> 
 		</li>
@@ -282,18 +284,20 @@ require_once 'save_data.php'; //Save input to database
 				</caption>
 			   <thead>
 			    	<tr>
+			    		<th id=mc_3_1 style=width:7% scope=col><span style=display:none>$name</span></th>
 			        	<th style=width:40% scope=col><span style=display:none>$name</span></th>
-			            <th id=mc_3_1 style=width:15% scope=col>B</th>
-			            <th id=mc_3_2 style=width:15% scope=col>R</th>
-						<th id=mc_3_3 style=width:15% scope=col>M</th>
-						<th id=mc_3_4 style=width:15% scope=col>N/A</th>
+			            <th id=mc_3_2 style=width:15% scope=col>B</th>
+			            <th id=mc_3_3 style=width:15% scope=col>R</th>
+						<th id=mc_3_4 style=width:15% scope=col>M</th>
+						<th id=mc_3_5 style=width:15% scope=col>N/A</th>
 			        </tr>
 			    </thead>
 			    <tbody>";
 			    for ($i=1; $i <= count($list[$mat]) ; $i++) {
 			    	$element = $list[$mat][$i]; 
 			    	echo "<tr class=alt>
-			    		<td class=first_col>$element</td>";
+						<td class=first_col>$i -</td> 
+			    		<td class=second_col>$element</td>";
 			    	for ($j=1; $j < 5; $j++) { 
 		            	echo "<td><label style= display:none for=element_3_$j>$loptions[$j]</label><input id=element$j name=$elNames[$mat][$i] type=radio value=$j /></td>";
 			    	}
@@ -305,10 +309,61 @@ require_once 'save_data.php'; //Save input to database
 			<div>
 				<span><?php echo $errorNames[$mat];?></span>
 			</div>
-		</li>
-	<?php
+		<?php
 		}
 		?>
+		<li class="section_break">
+		<p></p>
+		</li>
+			<h3 style="font-weight:bold">Observaciones:</h3>
+			<p></p>
+			<h3 style="font-weight:100">Anote el número correspondiente al ítem en cada caso antes de comenzar a escribir</h3>
+			<br>
+			<?php
+			foreach ($names as $mat => $name) {
+			echo "<li>
+				<label class=description for=element_2$mat>$name</label>
+				<div>
+					<textarea onKeyPress=check_length_$mat(this.form); onKeyDown=check_length_$mat(this.form); id=element_2$mat name=$comNames[$mat] class=textarea>$comVariables[$mat]</textarea> 
+					<br>
+					<div class=count-chars>
+						<input size=1 value=300 name=text_num_$mat style=float:right>
+					</div>
+					<span>$errorNames1[$mat]</span>
+				</div>";
+			}
+			?>
+		<li class="section_break">
+		<p></p>
+		</li>
+		<li>
+			<label class="description" for="output">Firma del asesor de servicio: </label>
+			<div id="mf_sigpad_7">
+				<div class="mf_sig_wrapper medium">
+		          <canvas class="mf_canvas_pad" width="309" height="130"></canvas>
+		          <input type="hidden" name="output" id="output" class="output">
+		        </div>
+		        <span><?php echo $signatureErr;?></span> 
+		        <a class="mf_sigpad_clear element_7_clear" href="#">Borrar</a>
+		        <script type="text/javascript">
+					$(function(){
+						var sigpad_options_7 = {
+			               drawOnly : true,
+			               displayOnly: false,
+			               clear: '.element_7_clear',
+			               bgColour: '#fff',
+			               penColour: '#000',
+			               output: '#output',
+			               lineTop: 95,
+			               lineMargin: 10,
+			               validateFields: false
+			        	};
+			        	var sigpad_data_7 = [];
+			      		$('#mf_sigpad_7').signaturePad(sigpad_options_7);
+					});
+				</script> 
+			</div> 
+		</li> 
 		<li class="buttons">
 			<input type="hidden" name="form_id" value="1134337" />
 			<input id="saveForm" class="button_text" type="submit" name="submit" value="Enviar" />

@@ -23,9 +23,13 @@ global $matrix7Err;
 global $matrix8Err;
 global $comment1Err;
 global $comment2Err;
-global $priceErr;
-global $timeErr;
-global $validityTimeErr;
+global $comment3Err;
+global $comment4Err;
+global $comment5Err;
+global $comment6Err;
+global $comment7Err;
+global $comment8Err;
+global $signatureErr;
 global $searchErr;
 
 $errors = array('$dateErr' => "", 
@@ -42,14 +46,26 @@ $errors = array('$dateErr' => "",
                 '$mileageErr' => "",
                 '$licenseErr' => "",
                 '$matrix1Err' => "",
+                '$matrix2Err' => "",
+                '$matrix3Err' => "",
+                '$matrix4Err' => "",
+                '$matrix5Err' => "",
+                '$matrix6Err' => "",
+                '$matrix7Err' => "",
+                '$matrix8Err' => "",
                 '$comment1Err' =>"",
                 '$comment2Err' =>"",
-                '$priceErr' =>"",
-                '$timeErr' =>"",
-                '$validityTimeErr' =>"");
+                '$comment3Err' =>"",
+                '$comment4Err' =>"",
+                '$comment5Err' =>"",
+                '$comment6Err' =>"",
+                '$comment7Err' =>"",
+                '$comment8Err' =>"",
+                '$signatureErr' =>""
+                );
 
 // $orderErr = $nameErr = $last_nameErr = $emailErr = $genderErr = $websiteErr = "";
-$month = $day = $year = $firstname = $lastname = $idnumber = $phone = $email = $make = $model = $license = $mileage =  $firstname1 = $lastname1 =  $comment1 = $comment2 = $price = $time = $validityTime = "";
+$month = $day = $year = $firstname = $lastname = $idnumber = $phone = $email = $make = $model = $license = $mileage =  $firstname1 = $lastname1 =  $comment1 = $comment2 = $comment3 = $comment4 = $comment5 = $comment6 = $comment7 = $comment8 = "";
 
 //search input text field and error in search.php file
 $search ="";
@@ -202,11 +218,67 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   //Check if all items have an option selected (change number as needed)
   if (!isset($_POST['matrix_1'])) {
     $matrix1Err = "* Se debe seleccionar una opción por ítem";
-  } elseif (count($_POST['matrix_1'])<17){
+  } elseif (count($_POST['matrix_1'])<27){
     $matrix1Err = "* Se debe seleccionar una opción por ítem";
   }
 
   array_push($errors, $matrix1Err);
+
+    if (!isset($_POST['matrix_2'])) {
+    $matrix2Err = "* Se debe seleccionar una opción por ítem";
+  } elseif (count($_POST['matrix_2'])<22){
+    $matrix2Err = "* Se debe seleccionar una opción por ítem";
+  }
+
+  array_push($errors, $matrix2Err);
+
+    if (!isset($_POST['matrix_3'])) {
+    $matrix3Err = "* Se debe seleccionar una opción por ítem";
+  } elseif (count($_POST['matrix_3'])<13){
+    $matrix3Err = "* Se debe seleccionar una opción por ítem";
+  }
+
+  array_push($errors, $matrix3Err);
+
+    if (!isset($_POST['matrix_4'])) {
+    $matrix4Err = "* Se debe seleccionar una opción por ítem";
+  } elseif (count($_POST['matrix_4'])<15){
+    $matrix4Err = "* Se debe seleccionar una opción por ítem";
+  }
+
+  array_push($errors, $matrix4Err);
+
+    if (!isset($_POST['matrix_5'])) {
+    $matrix5Err = "* Se debe seleccionar una opción por ítem";
+  } elseif (count($_POST['matrix_5'])<9){
+    $matrix5Err = "* Se debe seleccionar una opción por ítem";
+  }
+
+  array_push($errors, $matrix5Err);
+
+    if (!isset($_POST['matrix_6'])) {
+    $matrix6Err = "* Se debe seleccionar una opción por ítem";
+  } elseif (count($_POST['matrix_6'])<24){
+    $matrix6Err = "* Se debe seleccionar una opción por ítem";
+  }
+
+  array_push($errors, $matrix6Err);
+
+    if (!isset($_POST['matrix_7'])) {
+    $matrix7Err = "* Se debe seleccionar una opción por ítem";
+  } elseif (count($_POST['matrix_7'])<10){
+    $matrix7Err = "* Se debe seleccionar una opción por ítem";
+  }
+
+  array_push($errors, $matrix7Err);
+
+    if (!isset($_POST['matrix_8'])) {
+    $matrix8Err = "* Se debe seleccionar una opción por ítem";
+  } elseif (count($_POST['matrix_8'])<5){
+    $matrix8Err = "* Se debe seleccionar una opción por ítem";
+  }
+
+  array_push($errors, $matrix8Err);
 
   if (empty($_POST["comment1"])) {
       $comment1 = "";
@@ -232,6 +304,83 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     array_push($errors, $comment2Err);
 
+    if (empty($_POST["comment3"])) {
+      $comment3 = "";
+    } else {
+      $comment3 = test_input($_POST["comment3"]);
+      // check if comment1 only contains numbers, letters and whitespaces
+      if (!preg_match("/^[0-9a-zA-Záéíóúñ,.;:$() ]*$/",$comment3)) {
+        $comment3Err = "* Solo números, letras y espacios permitidos"; 
+      }
+    }
+
+    array_push($errors, $comment3Err);
+
+      if (empty($_POST["comment4"])) {
+      $comment4 = "";
+    } else {
+      $comment4 = test_input($_POST["comment4"]);
+      // check if comment1 only contains numbers, letters and whitespaces
+      if (!preg_match("/^[0-9a-zA-Záéíóúñ,.;:$() ]*$/",$comment4)) {
+        $comment4Err = "* Solo números, letras y espacios permitidos"; 
+      }
+    }
+
+    array_push($errors, $comment4Err);
+
+      if (empty($_POST["comment5"])) {
+      $comment5 = "";
+    } else {
+      $comment5 = test_input($_POST["comment5"]);
+      // check if comment1 only contains numbers, letters and whitespaces
+      if (!preg_match("/^[0-9a-zA-Záéíóúñ,.;:$() ]*$/",$comment5)) {
+        $comment5Err = "* Solo números, letras y espacios permitidos"; 
+      }
+    }
+
+    array_push($errors, $comment5Err);
+
+      if (empty($_POST["comment6"])) {
+      $comment6 = "";
+    } else {
+      $comment6 = test_input($_POST["comment6"]);
+      // check if comment1 only contains numbers, letters and whitespaces
+      if (!preg_match("/^[0-9a-zA-Záéíóúñ,.;:$() ]*$/",$comment6)) {
+        $comment6Err = "* Solo números, letras y espacios permitidos"; 
+      }
+    }
+
+    array_push($errors, $comment6Err);
+
+      if (empty($_POST["comment7"])) {
+      $comment7 = "";
+    } else {
+      $comment7 = test_input($_POST["comment7"]);
+      // check if comment1 only contains numbers, letters and whitespaces
+      if (!preg_match("/^[0-9a-zA-Záéíóúñ,.;:$() ]*$/",$comment7)) {
+        $comment7Err = "* Solo números, letras y espacios permitidos"; 
+      }
+    }
+
+    array_push($errors, $comment7Err);
+
+      if (empty($_POST["comment8"])) {
+      $comment8 = "";
+    } else {
+      $comment8 = test_input($_POST["comment8"]);
+      // check if comment1 only contains numbers, letters and whitespaces
+      if (!preg_match("/^[0-9a-zA-Záéíóúñ,.;:$() ]*$/",$comment8)) {
+        $comment8Err = "* Solo números, letras y espacios permitidos"; 
+      }
+    }
+
+    array_push($errors, $comment8Err);
+
+      if (!json_decode(@$_POST["output"])){
+      $signatureErr = "* Firma del asesor requerida";
+    }
+
+  array_push($errors, $signatureErr);
 
   //Data check for search.php file
 
@@ -245,41 +394,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   }
 
-  if (empty($_POST["price"])) {
-    $priceErr = "* Costo de la reparación requerido";
-  } else {
-    $price = test_input($_POST["price"]);
-    // check if order only contains numbers and no whitespaces
-    if (!preg_match("/^[0-9]*$/",$price)) {
-      $priceErr = "* Solo números sin espacios permitidos"; 
-    }
-  }
-
-  array_push($errors, $priceErr);
-
-  if (empty($_POST["time"])) {
-    $priceErr = "* Tiempo de reparación requerido";
-  } else {
-    $time = test_input($_POST["time"]);
-    // check if order only contains numbers and no whitespaces
-    if (!preg_match("/^[0-9]*$/",$time)) {
-      $timeErr = "* Solo números sin espacios permitidos"; 
-    }
-  }
-
-  array_push($errors, $timeErr);
-
-  if (empty($_POST["validity-time"])) {
-    $validityTimeErr = "* Validez de la cotización requerida";
-  } else {
-    $validityTime = test_input($_POST["validity-time"]);
-    // check if order only contains numbers and no whitespaces
-    if (!preg_match("/^[0-9]*$/",$validityTime)) {
-      $validityTimeErr = "* Solo números sin espacios permitidos"; 
-    }
-  }
-
-  array_push($errors, $validityTimeErr);
 }
 
 function test_input($data) {

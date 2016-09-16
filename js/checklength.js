@@ -66,8 +66,76 @@ else{ // Maximum length not reached so update the value of comment2 counter
 }
 }
 
-//Función para el campo de nombre asesor de servicio
+//Función para el quinto campo de comentarios
 function check_length_5(testform)
+{
+maxLen = 300; // max number of characters allowed
+if (testform.comment5.value.length >= maxLen) {
+// Alert message if maximum limit is reached. 
+// If required Alert can be removed. 
+var msg = "Haz alcanzado el máximo de caracteres permitido";
+alert(msg);
+// Reached the Maximum length so trim the textarea
+	testform.comment5.value = testform.comment5.value.substring(0, maxLen);
+ }
+else{ // Maximum length not reached so update the value of comment2 counter
+	testform.text_num_5.value = maxLen - testform.comment5.value.length;
+}
+}
+
+//Función para el sexto campo de comentarios
+function check_length_6(testform)
+{
+maxLen = 300; // max number of characters allowed
+if (testform.comment6.value.length >= maxLen) {
+// Alert message if maximum limit is reached. 
+// If required Alert can be removed. 
+var msg = "Haz alcanzado el máximo de caracteres permitido";
+alert(msg);
+// Reached the Maximum length so trim the textarea
+	testform.comment6.value = testform.comment6.value.substring(0, maxLen);
+ }
+else{ // Maximum length not reached so update the value of comment2 counter
+	testform.text_num_6.value = maxLen - testform.comment6.value.length;
+}
+}
+
+//Función para el septimo campo de comentarios
+function check_length_7(testform)
+{
+maxLen = 300; // max number of characters allowed
+if (testform.comment7.value.length >= maxLen) {
+// Alert message if maximum limit is reached. 
+// If required Alert can be removed. 
+var msg = "Haz alcanzado el máximo de caracteres permitido";
+alert(msg);
+// Reached the Maximum length so trim the textarea
+	testform.comment7.value = testform.comment7.value.substring(0, maxLen);
+ }
+else{ // Maximum length not reached so update the value of comment2 counter
+	testform.text_num_7.value = maxLen - testform.comment7.value.length;
+}
+}
+
+//Función para el coctavo campo de comentarios
+function check_length_8(testform)
+{
+maxLen = 300; // max number of characters allowed
+if (testform.comment8.value.length >= maxLen) {
+// Alert message if maximum limit is reached. 
+// If required Alert can be removed. 
+var msg = "Haz alcanzado el máximo de caracteres permitido";
+alert(msg);
+// Reached the Maximum length so trim the textarea
+	testform.comment8.value = testform.comment8.value.substring(0, maxLen);
+ }
+else{ // Maximum length not reached so update the value of comment2 counter
+	testform.text_num_8.value = maxLen - testform.comment8.value.length;
+}
+}
+
+//Función para el campo de nombre asesor de servicio
+function check_length_9(testform)
 {
 maxLen = 9; // max number of characters allowed
 if (testform.firstname1.value.length >= maxLen) {
@@ -79,12 +147,12 @@ alert(msg);
 	testform.firstname1.value = testform.firstname1.value.substring(0, maxLen);
  }
 else{ // Maximum length not reached so update the value of comment2 counter
-	testform.text_num_5.value = maxLen - testform.firstname1.value.length;
+	testform.text_num_9.value = maxLen - testform.firstname1.value.length;
 }
 }
 
 //Función para el campo de apellido asesor de servicio
-function check_length_6(testform)
+function check_length_10(testform)
 {
 maxLen = 10; // max number of characters allowed
 if (testform.lastname1.value.length >= maxLen) {
@@ -96,12 +164,12 @@ alert(msg);
 	testform.lastname1.value = testform.lastname1.value.substring(0, maxLen);
  }
 else{ // Maximum length not reached so update the value of comment2 counter
-	testform.text_num_6.value = maxLen - testform.lastname1.value.length;
+	testform.text_num_10.value = maxLen - testform.lastname1.value.length;
 }
 }
 
 //Función para el campo de nombre cliente
-function check_length_7(testform)
+function check_length_11(testform)
 {
 maxLen = 15; // max number of characters allowed
 if (testform.firstname.value.length >= maxLen) {
@@ -113,12 +181,12 @@ alert(msg);
 	testform.firstname.value = testform.firstname.value.substring(0, maxLen);
  }
 else{ // Maximum length not reached so update the value of comment2 counter
-	testform.text_num_7.value = maxLen - testform.firstname.value.length;
+	testform.text_num_11.value = maxLen - testform.firstname.value.length;
 }
 }
 
 //Función para el campo de apellido cliente
-function check_length_8(testform)
+function check_length_12(testform)
 {
 maxLen = 11; // max number of characters allowed
 if (testform.lastname.value.length >= maxLen) {
@@ -130,7 +198,7 @@ alert(msg);
 	testform.lastname.value = testform.lastname.value.substring(0, maxLen);
  }
 else{ // Maximum length not reached so update the value of comment2 counter
-	testform.text_num_8.value = maxLen - testform.lastname.value.length;
+	testform.text_num_12.value = maxLen - testform.lastname.value.length;
 }
 }
 

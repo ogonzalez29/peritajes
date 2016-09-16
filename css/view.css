@@ -257,6 +257,10 @@ table {
   	cursor: url("../js/signaturepad/pen.cur") 16 16, crosshair;
 }
 
+#machform_review_table .mf_canvas_pad{
+  cursor: auto;
+}
+
 .mf_sig_wrapper{
 	margin: 0 auto;
 	width: 309px;
