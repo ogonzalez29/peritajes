@@ -181,14 +181,14 @@ $elNames = array(
 
 //list of matrices errors names
 $errorNames = array(
-	'1' => $matrix1Err,
-	'2' => $matrix2Err,
-	'3' => $matrix3Err,
-	'4' => $matrix4Err,
-	'5' => $matrix5Err,
-	'6' => $matrix6Err,
-	'7' => $matrix7Err,
-	'8' => $matrix8Err
+	'1' => @$matrix1Err,
+	'2' => @$matrix2Err,
+	'3' => @$matrix3Err,
+	'4' => @$matrix4Err,
+	'5' => @$matrix5Err,
+	'6' => @$matrix6Err,
+	'7' => @$matrix7Err,
+	'8' => @$matrix8Err
 	);
 
 //list of comments names
@@ -205,182 +205,171 @@ $comNames = array(
 
 //List of comments variables
 $comVariables = array(
-	'1' => $comment1,
-	'2' => $comment2,
-	'3' => $comment3,
-	'4' => $comment4,
-	'5' => $comment5,
-	'6' => $comment6,
-	'7' => $comment7,
-	'8' => $comment8,
+	'1' => @$comment1,
+	'2' => @$comment2,
+	'3' => @$comment3,
+	'4' => @$comment4,
+	'5' => @$comment5,
+	'6' => @$comment6,
+	'7' => @$comment7,
+	'8' => @$comment8,
 	);
 
 //list of comments errors names
 $errorNames1 = array(
-	'1' => $comment1Err,
-	'2' => $comment2Err,
-	'3' => $comment3Err,
-	'4' => $comment4Err,
-	'5' => $comment5Err,
-	'6' => $comment6Err,
-	'7' => $comment7Err,
-	'8' => $comment8Err
+	'1' => @$comment1Err,
+	'2' => @$comment2Err,
+	'3' => @$comment3Err,
+	'4' => @$comment4Err,
+	'5' => @$comment5Err,
+	'6' => @$comment6Err,
+	'7' => @$comment7Err,
+	'8' => @$comment8Err
 	);
 
-//list of elements for matrix 1
-$matrix1Ele = array(
-	'1' => 'm1_el1',
-	'2' => 'm1_el2',
-	'3' => 'm1_el3',
-	'4' => 'm1_el4',
-	'5' => 'm1_el5',
-	'6' => 'm1_el6',
-	'7' => 'm1_el7',
-	'8' => 'm1_el8',
-	'9' => 'm1_el9',
-	'10' => 'm1_el10',
-	'11' => 'm1_el11',
-	'12' => 'm1_el12',
-	'13' => 'm1_el13',
-	'14' => 'm1_el14',
-	'15' => 'm1_el15',
-	'16' => 'm1_el16',
-	'17' => 'm1_el17',
-	'18' => 'm1_el18',
-	'19' => 'm1_el19',
-	'20' => 'm1_el20',
-	'21' => 'm1_el21',
-	'22' => 'm1_el22',
-	'23' => 'm1_el23',
-	'24' => 'm1_el24',
-	'25' => 'm1_el25',
-	'26' => 'm1_el26',
-	'27' => 'm1_el27'
+//list of matrix elements names
+$matrixNames = array(
+	'1' => array(
+				'1' => 'm1_el1',
+				'2' => 'm1_el2',
+				'3' => 'm1_el3',
+				'4' => 'm1_el4',
+				'5' => 'm1_el5',
+				'6' => 'm1_el6',
+				'7' => 'm1_el7',
+				'8' => 'm1_el8',
+				'9' => 'm1_el9',
+				'10' => 'm1_el10',
+				'11' => 'm1_el11',
+				'12' => 'm1_el12',
+				'13' => 'm1_el13',
+				'14' => 'm1_el14',
+				'15' => 'm1_el15',
+				'16' => 'm1_el16',
+				'17' => 'm1_el17',
+				'18' => 'm1_el18',
+				'19' => 'm1_el19',
+				'20' => 'm1_el20',
+				'21' => 'm1_el21',
+				'22' => 'm1_el22',
+				'23' => 'm1_el23',
+				'24' => 'm1_el24',
+				'25' => 'm1_el25',
+				'26' => 'm1_el26',
+				'27' => 'm1_el27'
+		),
+	'2' => array(
+				'1' => 'm2_el1',
+				'2' => 'm2_el2',
+				'3' => 'm2_el3',
+				'4' => 'm2_el4',
+				'5' => 'm2_el5',
+				'6' => 'm2_el6',
+				'7' => 'm2_el7',
+				'8' => 'm2_el8',
+				'9' => 'm2_el9',
+				'10' => 'm2_el10',
+				'11' => 'm2_el11',
+				'12' => 'm2_el12',
+				'13' => 'm2_el13',
+				'14' => 'm2_el14',
+				'15' => 'm2_el15',
+				'16' => 'm2_el16',
+				'17' => 'm2_el17',
+				'18' => 'm2_el18',
+				'19' => 'm2_el19',
+				'20' => 'm2_el20',
+				'21' => 'm2_el21',
+				'22' => 'm2_el22'
+		),
+	'3' => array(
+				'1' => 'm3_el1',
+				'2' => 'm3_el2',
+				'3' => 'm3_el3',
+				'4' => 'm3_el4',
+				'5' => 'm3_el5',
+				'6' => 'm3_el6',
+				'7' => 'm3_el7',
+				'8' => 'm3_el8',
+				'9' => 'm3_el9',
+				'10' => 'm3_el10',
+				'11' => 'm3_el11',
+				'12' => 'm3_el12',
+				'13' => 'm3_el13'
+		),
+	'4' => array(
+				'1' => 'm4_el1',
+				'2' => 'm4_el2',
+				'3' => 'm4_el3',
+				'4' => 'm4_el4',
+				'5' => 'm4_el5',
+				'6' => 'm4_el6',
+				'7' => 'm4_el7',
+				'8' => 'm4_el8',
+				'9' => 'm4_el9',
+				'10' => 'm4_el10',
+				'11' => 'm4_el11',
+				'12' => 'm4_el12',
+				'13' => 'm4_el13',
+				'14' => 'm4_el14',
+				'15' => 'm4_el15'
+		),
+	'5' => array(
+				'1' => 'm5_el1',
+				'2' => 'm5_el2',
+				'3' => 'm5_el3',
+				'4' => 'm5_el4',
+				'5' => 'm5_el5',
+				'6' => 'm5_el6',
+				'7' => 'm5_el7',
+				'8' => 'm5_el8',
+				'9' => 'm5_el9'
+		),
+	'6' => array(
+				'1' => 'm6_el1',
+				'2' => 'm6_el2',
+				'3' => 'm6_el3',
+				'4' => 'm6_el4',
+				'5' => 'm6_el5',
+				'6' => 'm6_el6',
+				'7' => 'm6_el7',
+				'8' => 'm6_el8',
+				'9' => 'm6_el9',
+				'10' => 'm6_el10',
+				'11' => 'm6_el11',
+				'12' => 'm6_el12',
+				'13' => 'm6_el13',
+				'14' => 'm6_el14',
+				'15' => 'm6_el15',
+				'16' => 'm6_el16',
+				'17' => 'm6_el17',
+				'18' => 'm6_el18',
+				'19' => 'm6_el19',
+				'20' => 'm6_el20',
+				'21' => 'm6_el21',
+				'22' => 'm6_el22',
+				'23' => 'm6_el23',
+				'24' => 'm6_el24'
+		),
+	'7' => array(
+				'1' => 'm7_el1',
+				'2' => 'm7_el2',
+				'3' => 'm7_el3',
+				'4' => 'm7_el4',
+				'5' => 'm7_el5',
+				'6' => 'm7_el6',
+				'7' => 'm7_el7',
+				'8' => 'm7_el8',
+				'9' => 'm7_el9',
+				'10' => 'm7_el10'
+		),
+	'8' => array(
+				'1' => 'm8_el1',
+				'2' => 'm8_el2',
+				'3' => 'm8_el3',
+				'4' => 'm8_el4',
+				'5' => 'm8_el5'
+		)
 	);
 
-//list of elements for matrix 2
-$matrix2Ele = array(
-	'1' => 'm2_el1',
-	'2' => 'm2_el2',
-	'3' => 'm2_el3',
-	'4' => 'm2_el4',
-	'5' => 'm2_el5',
-	'6' => 'm2_el6',
-	'7' => 'm2_el7',
-	'8' => 'm2_el8',
-	'9' => 'm2_el9',
-	'10' => 'm2_el10',
-	'11' => 'm2_el11',
-	'12' => 'm2_el12',
-	'13' => 'm2_el13',
-	'14' => 'm2_el14',
-	'15' => 'm2_el15',
-	'16' => 'm2_el16',
-	'17' => 'm2_el17',
-	'18' => 'm2_el18',
-	'19' => 'm2_el19',
-	'20' => 'm2_el20',
-	'21' => 'm2_el21',
-	'22' => 'm2_el22'
-	);
-
-//list of elements for matrix 3
-$matrix3Ele = array(
-	'1' => 'm3_el1',
-	'2' => 'm3_el2',
-	'3' => 'm3_el3',
-	'4' => 'm3_el4',
-	'5' => 'm3_el5',
-	'6' => 'm3_el6',
-	'7' => 'm3_el7',
-	'8' => 'm3_el8',
-	'9' => 'm3_el9',
-	'10' => 'm3_el10',
-	'11' => 'm3_el11',
-	'12' => 'm3_el12',
-	'13' => 'm3_el13'
-	);
-
-//list of elements for matrix 4
-$matrix4Ele = array(
-	'1' => 'm4_el1',
-	'2' => 'm4_el2',
-	'3' => 'm4_el3',
-	'4' => 'm4_el4',
-	'5' => 'm4_el5',
-	'6' => 'm4_el6',
-	'7' => 'm4_el7',
-	'8' => 'm4_el8',
-	'9' => 'm4_el9',
-	'10' => 'm4_el10',
-	'11' => 'm4_el11',
-	'12' => 'm4_el12',
-	'13' => 'm4_el13',
-	'14' => 'm4_el14',
-	'15' => 'm4_el15'
-	);
-
-//list of elements for matrix 5
-$matrix5Ele = array(
-	'1' => 'm5_el1',
-	'2' => 'm5_el2',
-	'3' => 'm5_el3',
-	'4' => 'm5_el4',
-	'5' => 'm5_el5',
-	'6' => 'm5_el6',
-	'7' => 'm5_el7',
-	'8' => 'm5_el8',
-	'9' => 'm5_el9'
-	);
-
-//list of elements for matrix 6
-$matrix6Ele = array(
-	'1' => 'm6_el1',
-	'2' => 'm6_el2',
-	'3' => 'm6_el3',
-	'4' => 'm6_el4',
-	'5' => 'm6_el5',
-	'6' => 'm6_el6',
-	'7' => 'm6_el7',
-	'8' => 'm6_el8',
-	'9' => 'm6_el9',
-	'10' => 'm6_el10',
-	'11' => 'm6_el11',
-	'12' => 'm6_el12',
-	'13' => 'm6_el13',
-	'14' => 'm6_el14',
-	'15' => 'm6_el15',
-	'16' => 'm6_el16',
-	'17' => 'm6_el17',
-	'18' => 'm6_el18',
-	'19' => 'm6_el19',
-	'20' => 'm6_el20',
-	'21' => 'm6_el21',
-	'22' => 'm6_el22',
-	'23' => 'm6_el23',
-	'24' => 'm6_el24'
-	);
-
-//list of elements for matrix 7
-$matrix7Ele = array(
-	'1' => 'm7_el1',
-	'2' => 'm7_el2',
-	'3' => 'm7_el3',
-	'4' => 'm7_el4',
-	'5' => 'm7_el5',
-	'6' => 'm7_el6',
-	'7' => 'm7_el7',
-	'8' => 'm7_el8',
-	'9' => 'm7_el9',
-	'10' => 'm7_el10'
-	);
-
-//list of elements for matrix 8
-$matrix8Ele = array(
-	'1' => 'm8_el1',
-	'2' => 'm8_el2',
-	'3' => 'm8_el3',
-	'4' => 'm8_el4',
-	'5' => 'm8_el5'
-	);
 ?>
