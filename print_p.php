@@ -372,8 +372,8 @@ include ('info.php');
 									<div class=col-12 style=text-align:center>
 										<h3 style=font-weight:bold>$name:</h3>
 									</div>
-									<div class=col-12 style='border:1px solid black'>
-										<h3 style=height:100px font-weight:100>$comments</h3>
+									<div id=comments class=col-12 style='border:1px solid black'>
+										<h3>$comments</h3>
 									</div>
 									</div>";
 								}		
@@ -391,8 +391,8 @@ include ('info.php');
 									<div class=col-12 style=text-align:center>
 										<h3 style=font-weight:bold>$name:</h3>
 									</div>
-									<div class=col-12 style='border:1px solid black'>
-										<h3 style=height:100px>$comments</h3>
+									<div id=comments class=col-12 style='border:1px solid black'>
+										<h3>$comments</h3>
 									</div>
 									</div>";
 								}		

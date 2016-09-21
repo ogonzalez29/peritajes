@@ -1,7 +1,7 @@
 //Función para el primer campo de comentarios
 function check_length_1(testform)
 {
-maxLen = 300; // max number of characters allowed
+maxLen = 400; // max number of characters allowed
 if (testform.comment1.value.length >= maxLen) {
 // Alert message if maximum limit is reached. 
 // If required Alert can be removed. 
@@ -18,7 +18,7 @@ else{ // Maximum length not reached so update the value of comment2 counter
 //Función para el segundo campo de comentarios
 function check_length_2(testform)
 {
-maxLen = 300; // max number of characters allowed
+maxLen = 400; // max number of characters allowed
 if (testform.comment2.value.length >= maxLen) {
 // Alert message if maximum limit is reached. 
 // If required Alert can be removed. 
@@ -35,7 +35,7 @@ else{ // Maximum length not reached so update the value of comment2 counter
 //Función para el tercer campo de comentarios
 function check_length_3(testform)
 {
-maxLen = 300; // max number of characters allowed
+maxLen = 400; // max number of characters allowed
 if (testform.comment3.value.length >= maxLen) {
 // Alert message if maximum limit is reached. 
 // If required Alert can be removed. 
@@ -52,7 +52,7 @@ else{ // Maximum length not reached so update the value of comment2 counter
 //Función para el cuarto campo de comentarios
 function check_length_4(testform)
 {
-maxLen = 300; // max number of characters allowed
+maxLen = 400; // max number of characters allowed
 if (testform.comment4.value.length >= maxLen) {
 // Alert message if maximum limit is reached. 
 // If required Alert can be removed. 
@@ -69,7 +69,7 @@ else{ // Maximum length not reached so update the value of comment2 counter
 //Función para el quinto campo de comentarios
 function check_length_5(testform)
 {
-maxLen = 300; // max number of characters allowed
+maxLen = 400; // max number of characters allowed
 if (testform.comment5.value.length >= maxLen) {
 // Alert message if maximum limit is reached. 
 // If required Alert can be removed. 
@@ -86,7 +86,7 @@ else{ // Maximum length not reached so update the value of comment2 counter
 //Función para el sexto campo de comentarios
 function check_length_6(testform)
 {
-maxLen = 300; // max number of characters allowed
+maxLen = 400; // max number of characters allowed
 if (testform.comment6.value.length >= maxLen) {
 // Alert message if maximum limit is reached. 
 // If required Alert can be removed. 
@@ -103,7 +103,7 @@ else{ // Maximum length not reached so update the value of comment2 counter
 //Función para el septimo campo de comentarios
 function check_length_7(testform)
 {
-maxLen = 300; // max number of characters allowed
+maxLen = 400; // max number of characters allowed
 if (testform.comment7.value.length >= maxLen) {
 // Alert message if maximum limit is reached. 
 // If required Alert can be removed. 
@@ -120,7 +120,7 @@ else{ // Maximum length not reached so update the value of comment2 counter
 //Función para el coctavo campo de comentarios
 function check_length_8(testform)
 {
-maxLen = 300; // max number of characters allowed
+maxLen = 400; // max number of characters allowed
 if (testform.comment8.value.length >= maxLen) {
 // Alert message if maximum limit is reached. 
 // If required Alert can be removed. 

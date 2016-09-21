@@ -327,7 +327,7 @@ require_once 'save_data.php'; //Save input to database
 					<textarea onKeyPress=check_length_$mat(this.form); onKeyDown=check_length_$mat(this.form); id=element_2$mat name=$comNames[$mat] class=textarea>$comVariables[$mat]</textarea> 
 					<br>
 					<div class=count-chars>
-						<input size=1 value=300 name=text_num_$mat style=float:right>
+						<input size=1 value=400 name=text_num_$mat style=float:right>
 					</div>
 					<span>$errorNames1[$mat]</span>
 				</div>";

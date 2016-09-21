@@ -232,12 +232,6 @@ table {
 	display: inline-block;
 }
 
-.row-2 .col-6 .col-12 h3{
-	font-weight: 100;
-	text-align: justify;
-	padding: 0 5px;
-}
-
 .row-2,
 .row-3{
 	padding-bottom: 15px;
@@ -246,6 +240,18 @@ table {
 
 .row-2 .col-12{
 	display: inline-block;
+}
+
+#comments {
+	height: 130px;
+	line-height: 130px;
+}
+	
+#comments h3 {
+	font-weight: 100;
+	text-align: justify;
+	padding: 0 5px;
+	line-height: normal;
 }
 
 /*.row-2 .col-12 .col-12 {
