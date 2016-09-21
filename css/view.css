@@ -183,16 +183,17 @@ html, body {
 }
 
 table span, 
-table thead tr {
+table thead tr,
+table thead th {
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 0.9em;
 	text-align: center;
 }
 
 table, th, td {
    border: 1px solid black;
    font-size: 0.8em;
-   /*font-weight:100;*/
+   font-weight: 100;
 }
 
 table {
@@ -231,6 +232,12 @@ table {
 	display: inline-block;
 }
 
+.row-2 .col-6 .col-12 h3{
+	font-weight: 100;
+	text-align: justify;
+	padding: 0 5px;
+}
+
 .row-2,
 .row-3{
 	padding-bottom: 15px;
@@ -241,9 +248,9 @@ table {
 	display: inline-block;
 }
 
-.row-2 .col-12 .col-12 {
+/*.row-2 .col-12 .col-12 {
 	border-bottom: 1px solid black;
-}
+}*/
 
 #mf_sigpad_7 {
 	margin-top: 15px;

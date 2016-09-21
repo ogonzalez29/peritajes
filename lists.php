@@ -7,7 +7,7 @@ $names= array(
 	'3' => 'C - INTERIOR',
 	'4' => 'D - MOTOR',
 	'5' => 'E - ELECTRICIDAD',
-	'6' => 'F - SUSPENSION/DIRECCION',
+	'6' => 'F - SUSPENSION Y DIRECCION',
 	'7' => 'G - CAJA Y TRANSMISION',
 	'8' => 'H - OTROS' 
 	);

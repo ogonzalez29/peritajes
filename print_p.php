@@ -1,11 +1,11 @@
 <?php
 //Verify if session started, else redirect to login.php
-ob_start();
-session_start();
-if (!$_SESSION['logged']) {
-	header("Location: login.php");
-	exit;
-}
+// ob_start();
+// session_start();
+// if (!$_SESSION['logged']) {
+// 	header("Location: login.php");
+// 	exit;
+// }
 //Connect to the database
 include ('info.php');
 // require ('search.php');
@@ -54,7 +54,7 @@ include ('info.php');
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row" style="padding-top:10px">
 					<div class="col-12">
 						<h1>PERITAJE DE VEHICULOS USADOS</h1>
 					</div>
@@ -164,7 +164,7 @@ include ('info.php');
 							if ($mat <= 2) {
 								echo "<table>
 									<thead>
-										<tr style=height:19px>
+										<tr style=height:21px>
 											<th style=width:6% scope=col><span style=display:none>1</span></th>
 											<th style=width:55% scope=col><span>$name</span></th>
 								            <th  style=width:10% scope=col>B</th>
@@ -209,7 +209,7 @@ include ('info.php');
 							if ($mat == 2) {
 								echo "<table>
 									<thead>
-										<tr style=height:19px>
+										<tr style=height:21px>
 											<th style=width:6% scope=col><span style=display:none>1</span></th>
 											<th style=width:55% scope=col><span style=display:none>$name</span></th>
 								            <th  style=width:10% scope=col>B</th>
@@ -244,7 +244,7 @@ include ('info.php');
 							if ($mat>2 && $mat<= 5) {
 								echo "<table>
 									<thead>
-										<tr style=height:19px>
+										<tr style=height:21px>
 											<th style=width:6% scope=col><span style=display:none>1</span></th>
 											<th style=width:55% scope=col><span>$name</span></th>
 								            <th  style=width:10% scope=col>B</th>
@@ -288,7 +288,7 @@ include ('info.php');
 							if ($mat == 5) {
 								echo "<table>
 									<thead>
-										<tr style=height:19px>
+										<tr style=height:21px>
 											<th style=width:6% scope=col><span style=display:none>1</span></th>
 											<th style=width:55% scope=col><span style=display:none>$name</span></th>
 								            <th  style=width:10% scope=col>B</th>
@@ -323,7 +323,7 @@ include ('info.php');
 							if ($mat > 5) {
 								echo "<table>
 									<thead>
-										<tr style=height:19px>
+										<tr style=height:21px>
 											<th style=width:6% scope=col><span style=display:none>1</span></th>
 											<th style=width:55% scope=col><span>$name</span></th>
 								            <th  style=width:10% scope=col>B</th>
@@ -362,96 +362,42 @@ include ('info.php');
 				</div>
 				<div class="row-2">
 					<div class="col-6" style="float:left; padding-right:5px">
-						<div class="col-12">
-							<div class="col-2">
-								<h3>A-EXTERIOR:</h3>
-							</div>
-							<div class="col-10">
-								<h3 style="Height:15px"></h3>
-							</div>
-							<div class="col-12">
-								<h3 style="Height:15px"></h3>
-							</div>
-						</div>
-						<div class="col-12">
-							<div class="col-2">
-								<h3>B-INTERIOR:</h3>
-							</div>
-							<div class="col-10">
-								<h3 style="Height:15px"></h3>
-							</div>
-							<div class="col-12">
-								<h3 style="Height:15px"></h3>
-							</div>
-						</div>
-						<div class="col-12">
-							<div class="col-2">
-								<h3>C-INTERIOR:</h3>
-							</div>
-							<div class="col-10">
-								<h3 style="Height:15px"></h3>
-							</div>
-							<div class="col-12">
-								<h3 style="Height:15px"></h3>
-							</div>
-						</div>
-						<div class="col-12">
-							<div class="col-1_1">
-								<h3>D-MOTOR:</h3>
-							</div>
-							<div class="col-11">
-								<h3 style="Height:15px"></h3>
-							</div>
-							<div class="col-12">
-								<h3 style="Height:15px"></h3>
-							</div>
-						</div>
+						<?php
+						require('lists.php');
+						foreach ($names as $mat => $name) {
+							if ($mat < 5) {
+								$comment= $comNames[$mat];
+								$comments= $row2[$comment];
+								echo "<div class=col-12>
+									<div class=col-12 style=text-align:center>
+										<h3 style=font-weight:bold>$name:</h3>
+									</div>
+									<div class=col-12 style='border:1px solid black'>
+										<h3 style=height:100px font-weight:100>$comments</h3>
+									</div>
+									</div>";
+								}		
+						}
+						?>
 					</div>
 					<div class="col-6" style="padding-left:5px">
-						<div class="col-12">
-							<div class="col-3">
-								<h3>E-ELECTRICIDAD:</h3>
-							</div>
-							<div class="col-9">
-								<h3 style="Height:15px"></h3>
-							</div>
-							<div class="col-12">
-								<h3 style="Height:15px"></h3>
-							</div>
-						</div>
-						<div class="col-12">
-							<div class="col-6_1">
-								<h3>F-SUSPENSION Y DIRECCION:</h3>
-							</div>
-							<div class="col-5_1">
-								<h3 style="Height:15px"></h3>
-							</div>
-							<div class="col-12">
-								<h3 style="Height:15px"></h3>
-							</div>
-						</div>
-						<div class="col-12">
-							<div class="col-4_1">
-								<h3>G-CAJA Y TRANSMISION:</h3>
-							</div>
-							<div class="col-7_1">
-								<h3 style="Height:15px"></h3>
-							</div>
-							<div class="col-12">
-								<h3 style="Height:15px"></h3>
-							</div>
-						</div>
-						<div class="col-12">
-							<div class="col-1_1">
-								<h3>H-OTROS:</h3>
-							</div>
-							<div class="col-11">
-								<h3 style="Height:15px"></h3>
-							</div>
-							<div class="col-12">
-								<h3 style="Height:15px"></h3>
-							</div>
-						</div>
+						<?php
+						require('lists.php');
+						foreach ($names as $mat => $name) {
+							if ($mat > 4) {
+								$comment= $comNames[$mat];
+								$comments= $row2[$comment];
+								echo "<div class=col-12>
+									<div class=col-12 style=text-align:center>
+										<h3 style=font-weight:bold>$name:</h3>
+									</div>
+									<div class=col-12 style='border:1px solid black'>
+										<h3 style=height:100px>$comments</h3>
+									</div>
+									</div>";
+								}		
+						}
+						?>
 					</div>
 				</div>
 				<div class="row-3">
