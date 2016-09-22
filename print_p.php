@@ -444,11 +444,17 @@ include ('info.php');
 			</div>
 			<?php
 			}
-			// file_put_contents('printcc.html', ob_get_contents());
+			file_put_contents('printp.html', ob_get_contents());
 			?>
 			</div>
-<!-- 		<div class="mockup-overlay">
-			<img src="img/Formato Peritaje.png">
-		</div> -->
+			<div style="margin: 10px 10px;">
+			<?php $doc3 = $doc2;?>
+				<form method="post" action="print_pdf.php">
+					<th width='60' align='center'>
+						<input type="submit" name="pdf" value="Imprimir en PDF">
+						<input type="hidden" name="doc3" value="<?php echo $doc3;?>" >
+					</th>
+				</form>
+			</div>
 	</body>
 </html>

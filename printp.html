@@ -1,0 +1,607 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>Peritaje de Vehículos Usados</title>
+		<link rel="stylesheet" href="css/view.css">
+		<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/signaturepad/jquery.signaturepad.min.js"></script>
+		<script type="text/javascript" src="js/signaturepad/json2.min.js"></script>
+	</head>
+	<body>
+				<div class="grid">
+			<div class="header">
+				<div class="row">
+					<div class="col-12">
+						<img src="img/logo.png" alt="logo servitalleres" />
+						<div class="col-1">
+							<h2>N. 2003</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row" style="padding-top:10px">
+					<div class="col-12">
+						<h1>PERITAJE DE VEHICULOS USADOS</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4" id="hleft">
+						<div class="col-12">
+							<div class="col-6" style="float:left">
+								<h3 style="font-weight:bold">Fecha:</h3>
+							</div>
+							<div class="col-6" style="float:right">
+								<h3 style="border-bottom:1px solid black">22/09/2016</h3>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="col-6" style="float:left">
+								<h3 style="font-weight:bold">Asesor de servicio:</h3>
+							</div>
+							<div class="col-6" style="float:right">
+								<h3 style="border-bottom:1px solid black">Pedro Ortiz</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-4" id="hcenter">
+						<div class="col-12">
+							<h3 style="font-weight:bold">DATOS DEL CLIENTE:</h3>
+						</div>
+						<div class="col-12">
+							<div class="col-4" style="float:left">
+								<h3 style="font-weight:bold">Nombre:</h3>
+							</div>
+							<div class="col-8" style="float:right">
+								<h3 style="border-bottom:1px solid black">Eduardo Garcia</h3>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="col-4" style="float:left">
+								<h3 style="font-weight:bold">Cédula:</h3>
+							</div>
+							<div class="col-8" style="float:right">
+								<h3 style="border-bottom:1px solid black">1.029.387.600</h3>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="col-4" style="float:left">
+								<h3 style="font-weight:bold">Teléfono:</h3>
+							</div>
+							<div class="col-8" style="float:right">
+								<h3 style="border-bottom:1px solid black">2119290</h3>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="col-4" style="float:left">
+								<h3 style="font-weight:bold">Email:</h3>
+							</div>
+							<div class="col-8" style="float:right">
+								<h3 style="border-bottom:1px solid black">dgonzalez@servitalleres.com</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-4" id="hright">
+						<div class="col-12">
+							<h3 style="font-weight:bold">DATOS DEL VEHICULO:</h3>
+						</div>
+						<div class="col-12">
+							<div class="col-6" style="float:left">
+								<h3 style="font-weight:bold">Marca y línea:</h3>
+							</div>
+							<div class="col-6" style="float:right">
+								<h3 style="border-bottom:1px solid black">Audi A1</h3>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="col-6" style="float:left">
+								<h3 style="font-weight:bold">Modelo:</h3>
+							</div>
+							<div class="col-6" style="float:right">
+								<h3 style="border-bottom:1px solid black">2016</h3>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="col-6" style="float:left">
+								<h3 style="font-weight:bold">Placa:</h3>
+							</div>
+							<div class="col-6" style="float:right">
+								<h3 style="border-bottom:1px solid black">GJY003</h3>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="col-6" style="float:left">
+								<h3 style="font-weight:bold">Kilometraje:</h3>
+							</div>
+							<div class="col-6" style="float:right">
+								<h3 style="border-bottom:1px solid black">12.000</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="row">
+					<div class="col-4" id="cleft">
+						<table>
+									<thead>
+										<tr style=height:21px>
+											<th style=width:6% scope=col><span style=display:none>1</span></th>
+											<th style=width:55% scope=col><span>A - EXTERIOR</span></th>
+								            <th  style=width:10% scope=col>B</th>
+											<th  style=width:10% scope=col>R</th>
+											<th  style=width:10% scope=col>M</th>
+											<th  style=width:15% scope=col>N/A</th>
+										</tr>
+									</thead>
+									<tbody><tr class=alt>
+											<td class=first_col>1</td> 
+								    		<td class=second_col>Latonería</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[1] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[1] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[1] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[1] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>2</td> 
+								    		<td class=second_col>Pintura</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[2] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[2] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[2] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[2] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>3</td> 
+								    		<td class=second_col>Chasis</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[3] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[3] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[3] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[3] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>4</td> 
+								    		<td class=second_col>Antena</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[4] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[4] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[4] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[4] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>5</td> 
+								    		<td class=second_col>Vidrios</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[5] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[5] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[5] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[5] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>6</td> 
+								    		<td class=second_col>Espejos</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[6] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[6] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[6] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[6] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>7</td> 
+								    		<td class=second_col>Limpiabrisas</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[7] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[7] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[7] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[7] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>8</td> 
+								    		<td class=second_col>Persiana</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[8] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[8] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[8] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[8] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>9</td> 
+								    		<td class=second_col>Farolas</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[9] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[9] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[9] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[9] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>10</td> 
+								    		<td class=second_col>Cocuyos direccionales</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[10] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[10] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[10] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[10] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>11</td> 
+								    		<td class=second_col>Cocuyos bomper</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[11] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[11] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[11] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[11] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>12</td> 
+								    		<td class=second_col>Cocuyos guardafangos</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[12] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[12] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[12] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[12] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>13</td> 
+								    		<td class=second_col>Emblemas</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[13] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[13] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[13] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[13] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>14</td> 
+								    		<td class=second_col>Chapas puertas</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[14] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[14] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[14] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[14] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>15</td> 
+								    		<td class=second_col>Manijas puertas</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[15] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[15] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[15] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[15] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>16</td> 
+								    		<td class=second_col>Tapa gasolina</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[16] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[16] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[16] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[16] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>17</td> 
+								    		<td class=second_col>Bocelería</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[17] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[17] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[17] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[17] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>18</td> 
+								    		<td class=second_col>Rines</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[18] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[18] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[18] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[18] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>19</td> 
+								    		<td class=second_col>Copas</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[19] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[19] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[19] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[19] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>20</td> 
+								    		<td class=second_col>Llantas</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[20] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[20] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[20] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[20] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>21</td> 
+								    		<td class=second_col>Bomper delantero</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[21] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[21] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[21] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[21] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>22</td> 
+								    		<td class=second_col>Punteras bomper delantero</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[22] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[22] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[22] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[22] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>23</td> 
+								    		<td class=second_col>Chapa baúl</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[23] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[23] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[23] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[23] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>24</td> 
+								    		<td class=second_col>Bomper trasero</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[24] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[24] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[24] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[24] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>25</td> 
+								    		<td class=second_col>Punteras bomper trasero</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[25] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[25] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[25] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[25] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>26</td> 
+								    		<td class=second_col>Luz placa</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[26] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[26] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[26] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[26] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>27</td> 
+								    		<td class=second_col>Stops</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_1[27] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_1[27] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_1[27] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_1[27] type=radio value=4 /></td></tr><table>
+									<thead>
+										<tr style=height:21px>
+											<th style=width:6% scope=col><span style=display:none>1</span></th>
+											<th style=width:55% scope=col><span>B - INTERIOR</span></th>
+								            <th  style=width:10% scope=col>B</th>
+											<th  style=width:10% scope=col>R</th>
+											<th  style=width:10% scope=col>M</th>
+											<th  style=width:15% scope=col>N/A</th>
+										</tr>
+									</thead>
+									<tbody><tr class=alt>
+											<td class=first_col>1</td> 
+								    		<td class=second_col>Espejo retrovisor</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[1] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[1] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[1] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[1] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>2</td> 
+								    		<td class=second_col>Parasoles</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[2] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[2] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[2] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[2] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>3</td> 
+								    		<td class=second_col>Cinturones de seguridad</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[3] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[3] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[3] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[3] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>4</td> 
+								    		<td class=second_col>Manijas elevavidrios</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[4] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[4] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[4] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[4] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>5</td> 
+								    		<td class=second_col>Manijas puertas</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[5] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[5] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[5] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[5] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>6</td> 
+								    		<td class=second_col>Descansabrazos</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[6] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[6] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[6] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[6] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>7</td> 
+								    		<td class=second_col>Forros</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[7] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[7] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[7] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[7] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>8</td> 
+								    		<td class=second_col>Tapicería</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[8] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[8] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[8] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[8] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>9</td> 
+								    		<td class=second_col>Ceniceros</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[9] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[9] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[9] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[9] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>10</td> 
+								    		<td class=second_col>Luz interior</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[10] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[10] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[10] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[10] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>11</td> 
+								    		<td class=second_col>Radio</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[11] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[11] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[11] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[11] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>12</td> 
+								    		<td class=second_col>Parlantes</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[12] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[12] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[12] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[12] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>13</td> 
+								    		<td class=second_col>Encendedor</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[13] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[13] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[13] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[13] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>14</td> 
+								    		<td class=second_col>Ventilador</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[14] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[14] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[14] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[14] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>15</td> 
+								    		<td class=second_col>Aire Acondicionado</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[15] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[15] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[15] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[15] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>16</td> 
+								    		<td class=second_col>Calefacción</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[16] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[16] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[16] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[16] type=radio value=4 /></td></tr>							</tbody>
+						</table>
+					</div>
+					<div class="col-4" id="ccenter">
+						<table>
+									<thead>
+										<tr style=height:21px>
+											<th style=width:6% scope=col><span style=display:none>1</span></th>
+											<th style=width:55% scope=col><span style=display:none>B - INTERIOR</span></th>
+								            <th  style=width:10% scope=col>B</th>
+											<th  style=width:10% scope=col>R</th>
+											<th  style=width:10% scope=col>M</th>
+											<th  style=width:15% scope=col>N/A</th>
+										</tr>
+									</thead>
+									<tbody><tr class=alt>
+											<td class=first_col>17</td> 
+								    		<td class=second_col>Tapa guantera</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[17] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[17] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[17] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[17] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>18</td> 
+								    		<td class=second_col>Desempañador trasero</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[18] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[18] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[18] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[18] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>19</td> 
+								    		<td class=second_col>Luz tablero</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[19] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[19] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[19] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[19] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>20</td> 
+								    		<td class=second_col>Indicador de gasolina</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[20] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[20] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[20] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[20] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>21</td> 
+								    		<td class=second_col>Indicador de temperatura</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[21] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[21] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[21] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[21] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>22</td> 
+								    		<td class=second_col>Indicador presión de aceite</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_2[22] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_2[22] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_2[22] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_2[22] type=radio value=4 /></td></tr><table>
+									<thead>
+										<tr style=height:21px>
+											<th style=width:6% scope=col><span style=display:none>1</span></th>
+											<th style=width:55% scope=col><span>C - INTERIOR</span></th>
+								            <th  style=width:10% scope=col>B</th>
+											<th  style=width:10% scope=col>R</th>
+											<th  style=width:10% scope=col>M</th>
+											<th  style=width:15% scope=col>N/A</th>
+										</tr>
+									</thead>
+									<tbody><tr class=alt>
+											<td class=first_col>1</td> 
+								    		<td class=second_col>Indicador freno de mano</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_3[1] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_3[1] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_3[1] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_3[1] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>2</td> 
+								    		<td class=second_col>Velocímetro</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_3[2] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_3[2] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_3[2] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_3[2] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>3</td> 
+								    		<td class=second_col>Tacómetro</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_3[3] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_3[3] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_3[3] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_3[3] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>4</td> 
+								    		<td class=second_col>Odómetro parcial</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_3[4] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_3[4] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_3[4] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_3[4] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>5</td> 
+								    		<td class=second_col>Odómetro total</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_3[5] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_3[5] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_3[5] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_3[5] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>6</td> 
+								    		<td class=second_col>Reloj</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_3[6] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_3[6] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_3[6] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_3[6] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>7</td> 
+								    		<td class=second_col>Rejillas tablero</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_3[7] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_3[7] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_3[7] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_3[7] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>8</td> 
+								    		<td class=second_col>Panel tablero</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_3[8] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_3[8] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_3[8] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_3[8] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>9</td> 
+								    		<td class=second_col>Conmutador de luces</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_3[9] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_3[9] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_3[9] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_3[9] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>10</td> 
+								    		<td class=second_col>Freno de mano</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_3[10] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_3[10] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_3[10] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_3[10] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>11</td> 
+								    		<td class=second_col>Tapetes</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_3[11] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_3[11] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_3[11] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_3[11] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>12</td> 
+								    		<td class=second_col>Alfombra</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_3[12] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_3[12] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_3[12] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_3[12] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>13</td> 
+								    		<td class=second_col>Apoyacabezas</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_3[13] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_3[13] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_3[13] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_3[13] type=radio value=4 /></td></tr><table>
+									<thead>
+										<tr style=height:21px>
+											<th style=width:6% scope=col><span style=display:none>1</span></th>
+											<th style=width:55% scope=col><span>D - MOTOR</span></th>
+								            <th  style=width:10% scope=col>B</th>
+											<th  style=width:10% scope=col>R</th>
+											<th  style=width:10% scope=col>M</th>
+											<th  style=width:15% scope=col>N/A</th>
+										</tr>
+									</thead>
+									<tbody><tr class=alt>
+											<td class=first_col>1</td> 
+								    		<td class=second_col>Varilla apertura capot</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_4[1] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_4[1] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_4[1] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_4[1] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>2</td> 
+								    		<td class=second_col>Amortiguadores capot</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_4[2] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_4[2] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_4[2] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_4[2] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>3</td> 
+								    		<td class=second_col>Sistema de refrigeración</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_4[3] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_4[3] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_4[3] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_4[3] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>4</td> 
+								    		<td class=second_col>Tapa de aceite</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_4[4] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_4[4] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_4[4] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_4[4] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>5</td> 
+								    		<td class=second_col>Tapa frasco lavavidrios</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_4[5] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_4[5] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_4[5] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_4[5] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>6</td> 
+								    		<td class=second_col>Tapa recipiente hidráulico</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_4[6] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_4[6] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_4[6] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_4[6] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>7</td> 
+								    		<td class=second_col>Varilla nivel de aceite</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_4[7] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_4[7] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_4[7] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_4[7] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>8</td> 
+								    		<td class=second_col>Sistema de alimentación</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_4[8] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_4[8] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_4[8] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_4[8] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>9</td> 
+								    		<td class=second_col>Compresión de cilindros</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_4[9] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_4[9] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_4[9] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_4[9] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>10</td> 
+								    		<td class=second_col>Sincronización</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_4[10] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_4[10] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_4[10] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_4[10] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>11</td> 
+								    		<td class=second_col>Nivel de aceite</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_4[11] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_4[11] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_4[11] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_4[11] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>12</td> 
+								    		<td class=second_col>Fugas de aceite</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_4[12] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_4[12] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_4[12] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_4[12] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>13</td> 
+								    		<td class=second_col>Ruidos de motor</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_4[13] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_4[13] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_4[13] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_4[13] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>14</td> 
+								    		<td class=second_col>Sistema de escape</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_4[14] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_4[14] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_4[14] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_4[14] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>15</td> 
+								    		<td class=second_col>Tanque de combustible</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_4[15] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_4[15] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_4[15] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_4[15] type=radio value=4 /></td></tr><table>
+									<thead>
+										<tr style=height:21px>
+											<th style=width:6% scope=col><span style=display:none>1</span></th>
+											<th style=width:55% scope=col><span>E - ELECTRICIDAD</span></th>
+								            <th  style=width:10% scope=col>B</th>
+											<th  style=width:10% scope=col>R</th>
+											<th  style=width:10% scope=col>M</th>
+											<th  style=width:15% scope=col>N/A</th>
+										</tr>
+									</thead>
+									<tbody><tr class=alt>
+											<td class=first_col>1</td> 
+								    		<td class=second_col>Batería</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_5[1] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_5[1] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_5[1] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_5[1] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>2</td> 
+								    		<td class=second_col>Motor de arranque</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_5[2] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_5[2] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_5[2] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_5[2] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>3</td> 
+								    		<td class=second_col>Alternador</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_5[3] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_5[3] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_5[3] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_5[3] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>4</td> 
+								    		<td class=second_col>Luces medias</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_5[4] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_5[4] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_5[4] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_5[4] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>5</td> 
+								    		<td class=second_col>Luces plenas</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_5[5] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_5[5] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_5[5] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_5[5] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>6</td> 
+								    		<td class=second_col>Luces direcionales</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_5[6] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_5[6] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_5[6] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_5[6] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>7</td> 
+								    		<td class=second_col>Luces de parqueo</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_5[7] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_5[7] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_5[7] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_5[7] type=radio value=4 /></td></tr>			
+							</tbody>
+						</table>
+					</div>
+					<div class="col-4" id="cright">
+						<table>
+									<thead>
+										<tr style=height:21px>
+											<th style=width:6% scope=col><span style=display:none>1</span></th>
+											<th style=width:55% scope=col><span style=display:none>E - ELECTRICIDAD</span></th>
+								            <th  style=width:10% scope=col>B</th>
+											<th  style=width:10% scope=col>R</th>
+											<th  style=width:10% scope=col>M</th>
+											<th  style=width:15% scope=col>N/A</th>
+										</tr>
+									</thead>
+									<tbody><tr class=alt>
+											<td class=first_col>8</td> 
+								    		<td class=second_col>Luces de reverso</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_5[8] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_5[8] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_5[8] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_5[8] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>9</td> 
+								    		<td class=second_col>Luces de freno</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_5[9] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_5[9] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_5[9] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_5[9] type=radio value=4 /></td></tr><table>
+									<thead>
+										<tr style=height:21px>
+											<th style=width:6% scope=col><span style=display:none>1</span></th>
+											<th style=width:55% scope=col><span>F - SUSPENSION Y DIRECCION</span></th>
+								            <th  style=width:10% scope=col>B</th>
+											<th  style=width:10% scope=col>R</th>
+											<th  style=width:10% scope=col>M</th>
+											<th  style=width:15% scope=col>N/A</th>
+										</tr>
+									</thead>
+									<tbody><tr class=alt>
+											<td class=first_col>1</td> 
+								    		<td class=second_col>Amortiguadores delanteros</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[1] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[1] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[1] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[1] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>2</td> 
+								    		<td class=second_col>Espirales delanteros</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[2] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[2] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[2] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[2] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>3</td> 
+								    		<td class=second_col>Rótulas superiores</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[3] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[3] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[3] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[3] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>4</td> 
+								    		<td class=second_col>Rótulas inferiores</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[4] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[4] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[4] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[4] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>5</td> 
+								    		<td class=second_col>Terminales de dirección</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[5] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[5] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[5] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[5] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>6</td> 
+								    		<td class=second_col>Brazos axiales</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[6] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[6] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[6] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[6] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>7</td> 
+								    		<td class=second_col>Muñecos barra estabilizadora</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[7] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[7] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[7] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[7] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>8</td> 
+								    		<td class=second_col>Tijeras superiores</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[8] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[8] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[8] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[8] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>9</td> 
+								    		<td class=second_col>Tijeras inferiores</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[9] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[9] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[9] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[9] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>10</td> 
+								    		<td class=second_col>Bujes de tijera</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[10] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[10] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[10] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[10] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>11</td> 
+								    		<td class=second_col>Bujes barra estabilizadora</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[11] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[11] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[11] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[11] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>12</td> 
+								    		<td class=second_col>Caja de dirección</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[12] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[12] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[12] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[12] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>13</td> 
+								    		<td class=second_col>Guardapolvos caja dirección</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[13] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[13] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[13] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[13] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>14</td> 
+								    		<td class=second_col>Discos de freno</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[14] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[14] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[14] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[14] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>15</td> 
+								    		<td class=second_col>Pastillas de freno delanteras</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[15] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[15] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[15] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[15] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>16</td> 
+								    		<td class=second_col>Pastillas de freno traseras</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[16] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[16] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[16] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[16] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>17</td> 
+								    		<td class=second_col>Rodamientos delanteros</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[17] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[17] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[17] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[17] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>18</td> 
+								    		<td class=second_col>Rodamientos traseros</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[18] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[18] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[18] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[18] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>19</td> 
+								    		<td class=second_col>Amortiguadores traseros</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[19] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[19] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[19] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[19] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>20</td> 
+								    		<td class=second_col>Muelles</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[20] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[20] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[20] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[20] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>21</td> 
+								    		<td class=second_col>Bujes de muelles</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[21] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[21] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[21] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[21] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>22</td> 
+								    		<td class=second_col>Rodamientos traseros</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[22] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[22] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[22] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[22] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>23</td> 
+								    		<td class=second_col>Espirales traseros</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[23] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[23] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[23] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[23] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>24</td> 
+								    		<td class=second_col>Bandas de freno</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_6[24] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_6[24] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_6[24] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_6[24] type=radio value=4 /></td></tr><table>
+									<thead>
+										<tr style=height:21px>
+											<th style=width:6% scope=col><span style=display:none>1</span></th>
+											<th style=width:55% scope=col><span>G - CAJA Y TRANSMISION</span></th>
+								            <th  style=width:10% scope=col>B</th>
+											<th  style=width:10% scope=col>R</th>
+											<th  style=width:10% scope=col>M</th>
+											<th  style=width:15% scope=col>N/A</th>
+										</tr>
+									</thead>
+									<tbody><tr class=alt>
+											<td class=first_col>1</td> 
+								    		<td class=second_col>Transmisión</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_7[1] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_7[1] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_7[1] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_7[1] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>2</td> 
+								    		<td class=second_col>Cárdan</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_7[2] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_7[2] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_7[2] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_7[2] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>3</td> 
+								    		<td class=second_col>Crucetas cárdan</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_7[3] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_7[3] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_7[3] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_7[3] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>4</td> 
+								    		<td class=second_col>Ejes delanteros</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_7[4] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_7[4] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_7[4] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_7[4] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>5</td> 
+								    		<td class=second_col>Control de cambios</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_7[5] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_7[5] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_7[5] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_7[5] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>6</td> 
+								    		<td class=second_col>Caja de velocidades</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_7[6] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_7[6] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_7[6] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_7[6] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>7</td> 
+								    		<td class=second_col>Soportes de caja</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_7[7] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_7[7] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_7[7] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_7[7] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>8</td> 
+								    		<td class=second_col>Kit de embrague</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_7[8] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_7[8] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_7[8] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_7[8] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>9</td> 
+								    		<td class=second_col>Guaya de embrague</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_7[9] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_7[9] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_7[9] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_7[9] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>10</td> 
+								    		<td class=second_col>Fugas de aceite</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_7[10] type=radio value=1 checked/></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_7[10] type=radio value=2 /></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_7[10] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_7[10] type=radio value=4 /></td></tr><table>
+									<thead>
+										<tr style=height:21px>
+											<th style=width:6% scope=col><span style=display:none>1</span></th>
+											<th style=width:55% scope=col><span>H - OTROS</span></th>
+								            <th  style=width:10% scope=col>B</th>
+											<th  style=width:10% scope=col>R</th>
+											<th  style=width:10% scope=col>M</th>
+											<th  style=width:15% scope=col>N/A</th>
+										</tr>
+									</thead>
+									<tbody><tr class=alt>
+											<td class=first_col>1</td> 
+								    		<td class=second_col>Gato</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_8[1] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_8[1] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_8[1] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_8[1] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>2</td> 
+								    		<td class=second_col>Copa de seguridad</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_8[2] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_8[2] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_8[2] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_8[2] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>3</td> 
+								    		<td class=second_col>Llanta de repuesto</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_8[3] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_8[3] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_8[3] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_8[3] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>4</td> 
+								    		<td class=second_col>Alarma</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_8[4] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_8[4] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_8[4] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_8[4] type=radio value=4 /></td></tr><tr class=alt>
+											<td class=first_col>5</td> 
+								    		<td class=second_col>Exploradoras</td><td><label style= display:none for=element_3_1>B</label><input id=element1 name=matrix_8[5] type=radio value=1 /></td><td><label style= display:none for=element_3_2>R</label><input id=element2 name=matrix_8[5] type=radio value=2 checked/></td><td><label style= display:none for=element_3_3>M</label><input id=element3 name=matrix_8[5] type=radio value=3 /></td><td><label style= display:none for=element_3_4>N/A</label><input id=element4 name=matrix_8[5] type=radio value=4 /></td></tr>			
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="row-1">
+					<h3>OBSERVACIONES:<br>(Anote el número correspondiente del ítem en cada caso)</h3>
+				</div>
+				<div class="row-2">
+					<div class="col-6" style="float:left; padding-right:5px; border-right:1px solid black">
+						<div class=col-12>
+									<div class=col-12 style=text-align:center>
+										<h3 style=font-weight:bold>A - EXTERIOR:</h3>
+									</div>
+									<div id=comments class=col-12>
+										<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lobortis iaculis nulla, vitae bibendum ante. Mauris tincidunt massa urna, quis pellentesque nibh iaculis at. Duis a rutrum justo. Aliquam sodales, dolor eu viverra dictum, mauris erat scelerisque sem, sed volutpat lacus tellus sit amet mauris. Proin auctor feugiat mattis. Quisque non est at magna hendrerit rutrum a sed metus. Suspendisse potenti. Suspendisse aliquam sem ac sapien eleifend faucibus.</h3>
+									</div>
+									</div><div class=col-12>
+									<div class=col-12 style=text-align:center>
+										<h3 style=font-weight:bold>B - INTERIOR:</h3>
+									</div>
+									<div id=comments class=col-12>
+										<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lobortis iaculis nulla, vitae bibendum ante. Mauris tincidunt massa urna, quis pellentesque nibh iaculis at. Duis a rutrum justo. Aliquam sodales, dolor eu viverra dictum, mauris erat scelerisque sem, sed volutpat lacus tellus sit amet mauris. Proin auctor feugiat mattis. Quisque non est at magna hendrerit rutrum a sed metus. Suspendisse potenti. Suspendisse aliquam sem ac sapien eleifend faucibus.</h3>
+									</div>
+									</div><div class=col-12>
+									<div class=col-12 style=text-align:center>
+										<h3 style=font-weight:bold>C - INTERIOR:</h3>
+									</div>
+									<div id=comments class=col-12>
+										<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lobortis iaculis nulla, vitae bibendum ante. Mauris tincidunt massa urna, quis pellentesque nibh iaculis at. Duis a rutrum justo. Aliquam sodales, dolor eu viverra dictum, mauris erat scelerisque sem, sed volutpat lacus tellus sit amet mauris. Proin auctor feugiat mattis. Quisque non est at magna hendrerit rutrum a sed metus. Suspendisse potenti. Suspendisse aliquam sem ac sapien eleifend faucibus.</h3>
+									</div>
+									</div><div class=col-12>
+									<div class=col-12 style=text-align:center>
+										<h3 style=font-weight:bold>D - MOTOR:</h3>
+									</div>
+									<div id=comments class=col-12>
+										<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lobortis iaculis nulla, vitae bibendum ante. Mauris tincidunt massa urna, quis pellentesque nibh iaculis at. Duis a rutrum justo. Aliquam sodales, dolor eu viverra dictum, mauris erat scelerisque sem, sed volutpat lacus tellus sit amet mauris. Proin auctor feugiat mattis. Quisque non est at magna hendrerit rutrum a sed metus. Suspendisse potenti. Suspendisse aliquam sem ac sapien eleifend faucibus.</h3>
+									</div>
+									</div>					</div>
+					<div class="col-6" style="padding-left:5px">
+						<div class=col-12>
+									<div class=col-12 style=text-align:center>
+										<h3 style=font-weight:bold>E - ELECTRICIDAD:</h3>
+									</div>
+									<div id=comments class=col-12>
+										<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lobortis iaculis nulla, vitae bibendum ante. Mauris tincidunt massa urna, quis pellentesque nibh iaculis at. Duis a rutrum justo. Aliquam sodales, dolor eu viverra dictum, mauris erat scelerisque sem, sed volutpat lacus tellus sit amet mauris. Proin auctor feugiat mattis. Quisque non est at magna hendrerit rutrum a sed metus. Suspendisse potenti. Suspendisse aliquam sem ac sapien eleifend faucibus.</h3>
+									</div>
+									</div><div class=col-12>
+									<div class=col-12 style=text-align:center>
+										<h3 style=font-weight:bold>F - SUSPENSION Y DIRECCION:</h3>
+									</div>
+									<div id=comments class=col-12>
+										<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lobortis iaculis nulla, vitae bibendum ante. Mauris tincidunt massa urna, quis pellentesque nibh iaculis at. Duis a rutrum justo. Aliquam sodales, dolor eu viverra dictum, mauris erat scelerisque sem, sed volutpat lacus tellus sit amet mauris. Proin auctor feugiat mattis. Quisque non est at magna hendrerit rutrum a sed metus. Suspendisse potenti. Suspendisse aliquam sem ac sapien eleifend faucibus.</h3>
+									</div>
+									</div><div class=col-12>
+									<div class=col-12 style=text-align:center>
+										<h3 style=font-weight:bold>G - CAJA Y TRANSMISION:</h3>
+									</div>
+									<div id=comments class=col-12>
+										<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lobortis iaculis nulla, vitae bibendum ante. Mauris tincidunt massa urna, quis pellentesque nibh iaculis at. Duis a rutrum justo. Aliquam sodales, dolor eu viverra dictum, mauris erat scelerisque sem, sed volutpat lacus tellus sit amet mauris. Proin auctor feugiat mattis. Quisque non est at magna hendrerit rutrum a sed metus. Suspendisse potenti. Suspendisse aliquam sem ac sapien eleifend faucibus.</h3>
+									</div>
+									</div><div class=col-12>
+									<div class=col-12 style=text-align:center>
+										<h3 style=font-weight:bold>H - OTROS:</h3>
+									</div>
+									<div id=comments class=col-12>
+										<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lobortis iaculis nulla, vitae bibendum ante. Mauris tincidunt massa urna, quis pellentesque nibh iaculis at. Duis a rutrum justo. Aliquam sodales, dolor eu viverra dictum, mauris erat scelerisque sem, sed volutpat lacus tellus sit amet mauris. Proin auctor feugiat mattis. Quisque non est at magna hendrerit rutrum a sed metus. Suspendisse potenti. Suspendisse aliquam sem ac sapien eleifend faucibus.</h3>
+									</div>
+									</div>					</div>
+				</div>
+				<div class="row-3">
+					<div id="mf_sigpad_7">
+						<div class="mf_sig_wrapper medium">
+					         <canvas class="mf_canvas_pad" width="309" height="129"></canvas>
+					         <input type="hidden" name="output" id="output" class="output"/>
+				        </div>
+				        <script type="text/javascript">
+							$(function(){
+								var sigpad_options_7 = {
+					               drawOnly : false,
+					               displayOnly: true,
+					               clear: '.element_7_clear',
+					               bgColour: '#fff',
+					               penColour: '#000',
+					               output: '#output',
+					               lineTop: 95,
+					               lineMargin: 10,
+					               validateFields: false
+					        	};
+					        	var sigpad_data_7 = [{"lx":163,"ly":49,"mx":163,"my":48},{"lx":163,"ly":48,"mx":163,"my":49},{"lx":163,"ly":51,"mx":163,"my":48},{"lx":165,"ly":56,"mx":163,"my":51},{"lx":168,"ly":65,"mx":165,"my":56},{"lx":168,"ly":70,"mx":168,"my":65},{"lx":168,"ly":74,"mx":168,"my":70},{"lx":167,"ly":83,"mx":168,"my":74},{"lx":165,"ly":88,"mx":167,"my":83},{"lx":164,"ly":90,"mx":165,"my":88},{"lx":163,"ly":92,"mx":164,"my":90},{"lx":163,"ly":94,"mx":163,"my":92},{"lx":162,"ly":95,"mx":163,"my":94},{"lx":161,"ly":96,"mx":162,"my":95},{"lx":161,"ly":97,"mx":161,"my":96},{"lx":161,"ly":98,"mx":161,"my":97},{"lx":161,"ly":100,"mx":161,"my":98},{"lx":161,"ly":102,"mx":161,"my":100},{"lx":161,"ly":104,"mx":161,"my":102},{"lx":160,"ly":105,"mx":161,"my":104},{"lx":159,"ly":106,"mx":160,"my":105},{"lx":158,"ly":106,"mx":159,"my":106},{"lx":154,"ly":102,"mx":158,"my":106},{"lx":152,"ly":99,"mx":154,"my":102},{"lx":149,"ly":95,"mx":152,"my":99},{"lx":146,"ly":92,"mx":149,"my":95},{"lx":144,"ly":89,"mx":146,"my":92},{"lx":141,"ly":86,"mx":144,"my":89},{"lx":140,"ly":82,"mx":141,"my":86},{"lx":138,"ly":80,"mx":140,"my":82},{"lx":136,"ly":77,"mx":138,"my":80},{"lx":135,"ly":73,"mx":136,"my":77},{"lx":133,"ly":70,"mx":135,"my":73},{"lx":132,"ly":68,"mx":133,"my":70},{"lx":130,"ly":64,"mx":132,"my":68},{"lx":128,"ly":61,"mx":130,"my":64},{"lx":127,"ly":59,"mx":128,"my":61},{"lx":127,"ly":57,"mx":127,"my":59},{"lx":126,"ly":56,"mx":127,"my":57},{"lx":125,"ly":55,"mx":126,"my":56},{"lx":124,"ly":55,"mx":125,"my":55},{"lx":122,"ly":55,"mx":124,"my":55},{"lx":121,"ly":57,"mx":122,"my":55},{"lx":119,"ly":62,"mx":121,"my":57},{"lx":116,"ly":67,"mx":119,"my":62},{"lx":113,"ly":71,"mx":116,"my":67},{"lx":111,"ly":76,"mx":113,"my":71},{"lx":108,"ly":80,"mx":111,"my":76},{"lx":106,"ly":83,"mx":108,"my":80},{"lx":105,"ly":86,"mx":106,"my":83},{"lx":105,"ly":88,"mx":105,"my":86},{"lx":105,"ly":90,"mx":105,"my":88},{"lx":105,"ly":91,"mx":105,"my":90},{"lx":105,"ly":92,"mx":105,"my":91},{"lx":104,"ly":92,"mx":105,"my":92},{"lx":102,"ly":91,"mx":104,"my":92},{"lx":98,"ly":86,"mx":102,"my":91},{"lx":96,"ly":84,"mx":98,"my":86},{"lx":94,"ly":81,"mx":96,"my":84},{"lx":91,"ly":79,"mx":94,"my":81},{"lx":89,"ly":77,"mx":91,"my":79},{"lx":87,"ly":76,"mx":89,"my":77},{"lx":86,"ly":75,"mx":87,"my":76},{"lx":85,"ly":74,"mx":86,"my":75},{"lx":85,"ly":73,"mx":85,"my":74},{"lx":84,"ly":73,"mx":85,"my":73},{"lx":84,"ly":71,"mx":84,"my":73},{"lx":84,"ly":70,"mx":84,"my":71},{"lx":85,"ly":68,"mx":84,"my":70},{"lx":87,"ly":65,"mx":85,"my":68},{"lx":91,"ly":63,"mx":87,"my":65},{"lx":99,"ly":56,"mx":91,"my":63},{"lx":110,"ly":49,"mx":99,"my":56},{"lx":120,"ly":44,"mx":110,"my":49},{"lx":130,"ly":38,"mx":120,"my":44},{"lx":154,"ly":28,"mx":130,"my":38},{"lx":160,"ly":26,"mx":154,"my":28},{"lx":163,"ly":26,"mx":160,"my":26},{"lx":165,"ly":26,"mx":163,"my":26},{"lx":166,"ly":26,"mx":165,"my":26},{"lx":168,"ly":26,"mx":166,"my":26},{"lx":171,"ly":26,"mx":168,"my":26},{"lx":175,"ly":28,"mx":171,"my":26},{"lx":180,"ly":31,"mx":175,"my":28},{"lx":185,"ly":35,"mx":180,"my":31},{"lx":189,"ly":39,"mx":185,"my":35},{"lx":194,"ly":43,"mx":189,"my":39},{"lx":200,"ly":46,"mx":194,"my":43},{"lx":206,"ly":48,"mx":200,"my":46},{"lx":213,"ly":50,"mx":206,"my":48},{"lx":219,"ly":51,"mx":213,"my":50},{"lx":224,"ly":52,"mx":219,"my":51},{"lx":228,"ly":52,"mx":224,"my":52},{"lx":231,"ly":50,"mx":228,"my":52},{"lx":234,"ly":48,"mx":231,"my":50},{"lx":235,"ly":47,"mx":234,"my":48},{"lx":236,"ly":46,"mx":235,"my":47},{"lx":237,"ly":43,"mx":236,"my":46},{"lx":237,"ly":42,"mx":237,"my":43},{"lx":237,"ly":45,"mx":237,"my":42},{"lx":235,"ly":48,"mx":237,"my":45},{"lx":232,"ly":52,"mx":235,"my":48},{"lx":228,"ly":55,"mx":232,"my":52},{"lx":225,"ly":58,"mx":228,"my":55},{"lx":222,"ly":61,"mx":225,"my":58},{"lx":218,"ly":64,"mx":222,"my":61},{"lx":216,"ly":66,"mx":218,"my":64},{"lx":215,"ly":66,"mx":216,"my":66},{"lx":214,"ly":66,"mx":215,"my":66},{"lx":213,"ly":66,"mx":214,"my":66},{"lx":212,"ly":66,"mx":213,"my":66}];
+					      		$('#mf_sigpad_7').signaturePad(sigpad_options_7).regenerate(sigpad_data_7);
+							});
+						</script>
+					</div>
+					<div class="col-12">
+						<h3 style="text-align:center">Firma y sello del taller</h3>
+					</div>
+				</div>
+				<div class="footer">
+					<div class="row-4">
+						<div class="col-12">
+							<h3>NOTA: El peritaje constituye una revisión exclusiva de los ítems relacionados. Cualquier daño no aparente detectado posterior a dicha revisión, no es responsabilidad del taller</h3>
+						</div>
+					</div>
+					<div class="row-5">
+						<div class="col-12">
+							<h3>Carrera 22 N. 76-57 | Bogotá - Colombia | 2117943 - 2119290<br>www.servitalleres.com | contacto@servitalleres.com</h3>
+						</div>
+					</div>	
+				</div>
+			</div>
+			
