@@ -1,11 +1,11 @@
 <?php
 //Verify if session started, else redirect to login.php
-// ob_start();
-// session_start();
-// if (!$_SESSION['logged']) {
-// 	header("Location: login.php");
-// 	exit;
-// }
+ob_start();
+session_start();
+if (!$_SESSION['logged']) {
+	header("Location: login.php");
+	exit;
+}
 //Connect to the database
 include ('info.php');
 // require ('search.php');
@@ -372,7 +372,7 @@ include ('info.php');
 									<div class=col-12 style=text-align:center>
 										<h3 style=font-weight:bold>$name:</h3>
 									</div>
-									<div id=comments class=col-12 style='border:1px solid black'>
+									<div id=comments class=col-12>
 										<h3>$comments</h3>
 									</div>
 									</div>";
@@ -391,7 +391,7 @@ include ('info.php');
 									<div class=col-12 style=text-align:center>
 										<h3 style=font-weight:bold>$name:</h3>
 									</div>
-									<div id=comments class=col-12 style='border:1px solid black'>
+									<div id=comments class=col-12>
 										<h3>$comments</h3>
 									</div>
 									</div>";

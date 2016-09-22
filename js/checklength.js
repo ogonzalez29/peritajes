@@ -117,7 +117,7 @@ else{ // Maximum length not reached so update the value of comment2 counter
 }
 }
 
-//Función para el coctavo campo de comentarios
+//Función para el octavo campo de comentarios
 function check_length_8(testform)
 {
 maxLen = 400; // max number of characters allowed
@@ -188,7 +188,7 @@ else{ // Maximum length not reached so update the value of comment2 counter
 //Función para el campo de apellido cliente
 function check_length_12(testform)
 {
-maxLen = 11; // max number of characters allowed
+maxLen = 13; // max number of characters allowed
 if (testform.lastname.value.length >= maxLen) {
 // Alert message if maximum limit is reached. 
 // If required Alert can be removed. 
@@ -199,6 +199,23 @@ alert(msg);
  }
 else{ // Maximum length not reached so update the value of comment2 counter
 	testform.text_num_12.value = maxLen - testform.lastname.value.length;
+}
+}
+
+//Función para el campo de email
+function check_length_13(testform)
+{
+maxLen = 33; // max number of characters allowed
+if (testform.email.value.length >= maxLen) {
+// Alert message if maximum limit is reached. 
+// If required Alert can be removed. 
+var msg = "Haz alcanzado el máximo de caracteres permitido";
+alert(msg);
+// Reached the Maximum length so trim the textarea
+	testform.email.value = testform.email.value.substring(0, maxLen);
+ }
+else{ // Maximum length not reached so update the value of comment2 counter
+	testform.text_num_13.value = maxLen - testform.email.value.length;
 }
 }
 
