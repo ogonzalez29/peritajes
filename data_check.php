@@ -30,7 +30,7 @@ global $comment6Err;
 global $comment7Err;
 global $comment8Err;
 global $signatureErr;
-global $searchErr;
+global $search2Err2;
 
 $errors = array('$dateErr' => "", 
                 '$nameErr' => "", 
@@ -68,8 +68,8 @@ $errors = array('$dateErr' => "",
 $month = $day = $year = $firstname = $lastname = $idnumber = $phone = $email = $make = $model = $license = $mileage =  $firstname1 = $lastname1 =  $comment1 = $comment2 = $comment3 = $comment4 = $comment5 = $comment6 = $comment7 = $comment8 = "";
 
 //search input text field and error in search.php file
-$search ="";
-$searchErr = "";
+$search2 ="";
+$search2Err2 = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if(empty($_POST["month"]) || empty($_POST["day"]) || empty($_POST["year"])){
@@ -384,13 +384,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   //Data check for search.php file
 
-  if (empty($_POST['cons'])){
-    $searchErr = "* Ingrese un criterio de búsqueda";
+  if (empty($_POST['cons2'])){
+    $search2Err2 = "* Ingrese un criterio de búsqueda";
   } else{
-    $search = test_input($_POST['cons']);
+    $search2 = test_input($_POST['cons2']);
     // check if search value only contains numbers, letters or whitespaces
-    if(!preg_match("/^[0-9a-zA-Záéíóúñ ]*$/", $search)){
-      $searchErr = "* Solo números, letras y espacios permitidos";
+    if(!preg_match("/^[0-9a-zA-Záéíóúñ ]*$/", $search2)){
+      $search2Err2 = "* Solo números, letras y espacios permitidos";
     }
   }
 

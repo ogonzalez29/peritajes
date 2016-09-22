@@ -5,12 +5,12 @@ if (!$_SESSION['logged']) {
 	exit;
 }
 
-include ('../info.php'); //Database connection
+include ('info.php'); //Database connection
 
-$search = $_SESSION['cons'];
+$search2 = $_SESSION['cons2'];
 /* vars for export */
 // database record to be exported
-$db_record = 'document';
+$db_record = 'document2';
 
 // filename for export
 $csv_filename = 'db_export_'.$db_record.'_'.date('Y-m-d').'.csv';
@@ -20,20 +20,20 @@ $csv_export = '';
 
 // query to get data from database
 require('search_query.php');
-$field = mysql_num_fields($run);
+$field2 = mysql_num_fields($run2);
 
 // create line with field names
-for($i = 0; $i < $field; $i++) {
-  $csv_export.= mysql_field_name($run,$i).';';
+for($i = 0; $i < $field2; $i++) {
+  $csv_export.= mysql_field_name($run2,$i).';';
 }
 // newline (seems to work both on Linux & Windows servers)
 $csv_export.= '
 ';
 // loop through database query and fill export variable
-while($row = mysql_fetch_array($run)) {
+while($row2 = mysql_fetch_array($run2)) {
   // create line with field values
-  for($i = 0; $i < $field; $i++) {
-    $csv_export.= '"'.$row[mysql_field_name($run,$i)].'";';
+  for($i = 0; $i < $field2; $i++) {
+    $csv_export.= '"'.$row2[mysql_field_name($run2,$i)].'";';
   }	
   $csv_export.= '
   ';	

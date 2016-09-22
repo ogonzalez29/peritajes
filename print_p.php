@@ -1,11 +1,11 @@
 <?php
 //Verify if session started, else redirect to login.php
-// ob_start();
-// session_start();
-// if (!$_SESSION['logged']) {
-// 	header("Location: login.php");
-// 	exit;
-// }
+ob_start();
+session_start();
+if (!$_SESSION['logged']) {
+	header("Location: login.php");
+	exit;
+}
 //Connect to the database
 include ('info.php');
 // require ('search.php');
@@ -15,7 +15,7 @@ include ('info.php');
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<title>Peritaje de Vehiculos</title>
+		<title>Peritaje de Vehículos Usados</title>
 		<link rel="stylesheet" href="css/view.css">
 		<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -25,22 +25,23 @@ include ('info.php');
 	<body>
 		<?php
 		//set search variable to find results from database
-		// @$search = $_SESSION['cons'];
-		// @$doc = $_POST['doc']-1000;
+		@$search2 = $_SESSION['cons2'];
+		@$doc2 = $_POST['doc2']-2000;
 
 		//get last results from database if recently submitted
 		$result2 = mysql_query("SELECT * FROM document2 ORDER BY id DESC LIMIT 1")
 			or die(mysql_error());
 
-		// if (!empty($search)) {
-		// 	$result = mysql_query("SELECT * FROM document2 WHERE id = '$doc'")
-		// 		or die(mysql_error());
+		if (!empty($search2)) {
+			$result2 = mysql_query("SELECT * FROM document2 WHERE id = '$doc2'")
+				or die(mysql_error());
 
-		// 	//If there's no information in database from search query
-		// 	if (mysql_num_rows($result) == 0) {
-		// 		die('No hay información con ese criterio de búsqueda');
-		// 	}
-		// }
+			//If there's no information in database from search query
+			if (mysql_num_rows($result2) == 0) {
+				die('No hay información con ese criterio de búsqueda');
+			}
+		}
+
 		//loop through results of database query, displaying them in the format
 		while ($row2 = mysql_fetch_array($result2)) {
 		?>
