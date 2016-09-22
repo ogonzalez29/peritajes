@@ -1,11 +1,11 @@
 <?php
 //Verify if session started, else redirect to login.php
-ob_start();
-session_start();
-if (!$_SESSION['logged']) {
-	header("Location: login.php");
-	exit;
-}
+// ob_start();
+// session_start();
+// if (!$_SESSION['logged']) {
+// 	header("Location: login.php");
+// 	exit;
+// }
 //Connect to the database
 include ('info.php');
 // require ('search.php');
@@ -358,10 +358,10 @@ include ('info.php');
 					</div>
 				</div>
 				<div class="row-1">
-					<h3>OBSERVACIONES:<br>Anote el número correspondiente</h3>
+					<h3>OBSERVACIONES:<br>(Anote el número correspondiente del ítem en cada caso)</h3>
 				</div>
 				<div class="row-2">
-					<div class="col-6" style="float:left; padding-right:5px">
+					<div class="col-6" style="float:left; padding-right:5px; border-right:1px solid black">
 						<?php
 						require('lists.php');
 						foreach ($names as $mat => $name) {
