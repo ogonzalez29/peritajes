@@ -32,45 +32,61 @@ $errors_array = array_filter($errors);
  	require('lists.php');
  	
  	foreach ($names as $mat => $name) {
-	 	//Matrix 1 information of print_p.php (A-Exterior)
-	 	for ($i=1; $i <= count($list[1]) ; $i++) {
-	 		@$$matrixNames[$mat][$i] = $_POST['matrix_1'][$i];
-		}
+ 		if ($mat == 1) {
+ 			//Matrix 1 information of print_i.php (Alumbrado exterior)
+		 	for ($i=1; $i <= count($list[1]) ; $i++) {
+		 		@$$matrixNames[$mat][$i] = $_POST['matrix_1'][$i];
+			}
+ 		}
+		 	
+ 		if ($mat == 2) {
+ 			//Matrix 2 information of print_i.php (Emisiones audibles)
+		 	for ($j=1; $j <= count($list[2]) ; $j++) {
+		 		@$$matrixNames[$mat][$j] = $_POST['matrix_2'][$j];
+			}
+ 		}
+		
+ 		if ($mat == 3) {
+ 			//Matrix 3 information of print_i.php (Suspensión)
+		  	for ($k=1; $k <= count($list[3]) ; $k++) {
+		 		@$$matrixNames[$mat][$k] = $_POST['matrix_3'][$k];
+			}
+ 		}
+			
+ 		if ($mat == 4) {
+ 			//Matrix 4 information of print_i.php (Estabilidad y dirección)
+		  	for ($l=1; $l <= count($list[4]) ; $l++) {
+		 		@$$matrixNames[$mat][$l] = $_POST['matrix_4'][$l];
+			}
+ 		}
 
-		//Matrix 2 information of print_cc.php (B-Interior)
-	 	for ($j=1; $j <= count($list[2]) ; $j++) {
-	 		@$$matrixNames[$mat][$j] = $_POST['matrix_2'][$j];
-		}
+ 		if ($mat == 5) {
+ 			//Matrix 5 information of print_i.php (Compartimiento motor)
+		  	for ($m=1; $m <= count($list[5]) ; $m++) {
+		 		@$$matrixNames[$mat][$m] = $_POST['matrix_5'][$m];
+			}
+ 		}
 
-		//Matrix 3 information of print_cc.php (C-Interior)
-	  	for ($k=1; $k <= count($list[3]) ; $k++) {
-	 		@$$matrixNames[$mat][$k] = $_POST['matrix_3'][$k];
-		}
+ 		if ($mat == 6) {
+ 			//Matrix 6 information of print_i.php (Frenos)
+		  	for ($n=1; $n <= count($list[6]) ; $n++) {
+		 		@$$matrixNames[$mat][$n] = $_POST['matrix_6'][$n];
+			}
+ 		}
 
-		//Matrix 4 information of print_cc.php (D-Motor)
-	  	for ($l=1; $l <= count($list[4]) ; $l++) {
-	 		@$$matrixNames[$mat][$l] = $_POST['matrix_4'][$l];
-		}
+ 		if ($mat == 7) {
+ 			//Matrix 7 information of print_i.php (Accesorios y equipamento)
+		   	for ($o=1; $o <= count($list[7]) ; $o++) {
+		 		@$$matrixNames[$mat][$o] = $_POST['matrix_7'][$o];
+			}
+ 		}
 
-		//Matrix 5 information of print_cc.php (E-Electricidad)
-	  	for ($m=1; $m <= count($list[5]) ; $m++) {
-	 		@$$matrixNames[$mat][$m] = $_POST['matrix_5'][$m];
-		}
-
-		//Matrix 6 information of print_cc.php (F-Suspension/direccion)
-	  	for ($n=1; $n <= count($list[6]) ; $n++) {
-	 		@$$matrixNames[$mat][$n] = $_POST['matrix_6'][$n];
-		}
-
-		//Matrix 7 information of print_cc.php (G-Caja y transmision)
-	   	for ($o=1; $o <= count($list[7]) ; $o++) {
-	 		@$$matrixNames[$mat][$o] = $_POST['matrix_7'][$o];
-		}
-
-		//Matrix 8 information of print_cc.php (H-Otros)
-	   	for ($p=1; $p <= count($list[8]) ; $p++) {
-	 		@$$matrixNames[$mat][$p] = $_POST['matrix_8'][$p];
-		}
+ 		if ($mat == 8) {
+ 			//Matrix 8 information of print_i.php (Documentos del vehículo)
+		   	for ($p=1; $p <= count($list[8]) ; $p++) {
+		 		@$$matrixNames[$mat][$p] = $_POST['matrix_8'][$p];
+			}
+ 		}
 	}
 
 	//Footer information of print_cc.php
