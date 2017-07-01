@@ -1,6 +1,8 @@
 <?php
 //Verify if session started, else redirect to login.php
-session_start();
+if(!isset($_SESSION)) { 
+    session_start(); 
+} 
 if (!$_SESSION['logged']) {
 	header("Location: login.php");
 	exit;
@@ -63,5 +65,7 @@ while ($row2 = mysql_fetch_array($result2)) {
 	if (!$pdf->send($doc3.'_'.$license.'_'.$day.$month.$year.'.pdf')) {
 	    echo $pdf->getError();
 	}
+
+		$pdf->saveAs('C:/Temp/'.$doc3.'_'.$license.'_'.$day.$month.$year.'.pdf');
 }
 ?>
